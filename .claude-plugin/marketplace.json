@@ -1,0 +1,15 @@
+{
+  "name": "kiln",
+  "owner": {
+    "name": "imranshiundu",
+    "url": "https://github.com/imranshiundu"
+  },
+  "plugins": [
+    {
+      "name": "kiln",
+      "source": "./",
+      "description": "Raw ideas in. Finished software out. A research-backed library of 15 agent skills covering the full lifecycle of building software: gather, spec, design, build, verify, ship, tend.",
+      "category": "skills"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="The KILN mark">
+  <rect width="120" height="120" rx="26" fill="#181209"/>
+  <path d="M60 20 L98 52 V98 H22 V52 Z" fill="#221808" stroke="#c8b79d" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M40 46 h18 M62 46 h18 M31 62 h58 M31 78 h16 M73 78 h16" stroke="#3a2c14" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M44 98 V78 A16 16 0 0 1 76 78 V98" fill="#0d0904" stroke="#c8b79d" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M60 66 C69 75 70 84 65 90 C62 93 58 93 55 90 C50 84 51 75 60 66 Z" fill="#f59e0b"/>
+  <path d="M60 75 C65 81 65 86 62 89 C60 91 58 90 58 88 C56 85 56 80 60 75 Z" fill="#fde68a"/>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "name": "kiln",
+  "description": "Raw ideas in. Finished software out. A research-backed library of agent skills covering the full lifecycle of building software.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Imran Shiundu",
+    "url": "https://github.com/imranshiundu"
+  },
+  "homepage": "https://github.com/imranshiundu/kiln",
+  "repository": "https://github.com/imranshiundu/kiln",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "lifecycle",
+    "software-engineering"
+  ]
+}
