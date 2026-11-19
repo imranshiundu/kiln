@@ -48,6 +48,46 @@ CLI, Copilot, and the rest):
 | `license` | Always `MIT`. |
 | `metadata.phase` | One of `gather`, `spec`, `design`, `build`, `verify`, `ship`, `tend`, `meta`. Carries the lifecycle organization without nesting directories. |
 
+## Writing the description
+
+The description is the skill's door — the only text an agent reads
+before deciding to load you. Three rewrites, from fails the Fire
+Test to passes:
+
+**Fails — an abstract:**
+
+> Helps improve code quality and maintainability through best
+> practices and structured guidance.
+
+Nothing to match against. Fires on everything and nothing; the
+agent scrolls past.
+
+**Better — a trigger, but generic:**
+
+> Reviews code for common issues. Use when working with code.
+
+Now it has a door, but the door opens onto a stadium. "Working with
+code" is every session; a trigger that always fires is noise.
+
+**Passes — what, then concrete when:**
+
+> A hostile self-review pass before declaring anything done —
+> reread the full diff, tag findings by severity, verify every
+> claim with a command. Use when work is about to be presented as
+> complete, a milestone is claimed, or a change is about to be
+> merged.
+
+The first sentence says what happens; the `Use when` names three
+situations an agent can actually match against a real request. An
+agent holding "I'm about to say this is done" loads the skill; an
+agent holding "write me a login page" does not. That decision —
+made correctly, before the body ever loads — is the whole point.
+
+One more rule the checker enforces: no two skills may open their
+`Use when` with the same six words. Two doors on the same hinge
+means an agent loads both or neither; if your trigger collides,
+one of you is sharpening.
+
 Anything else — tool grants, hooks, model overrides — is deliberately
 absent. Tool-specific frontmatter breaks portability, and KILN trades
 per-agent power for works-everywhere.
