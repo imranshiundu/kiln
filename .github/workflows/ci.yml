@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -46,4 +47,41 @@ jobs:
               print(f"marketplace.json says {stated} skills; skills/ has {len(skills)}")
               sys.exit(1)
           print(f"manifests agree: {len(skills)} skills, plugin version {pj['version']}")
+          EOF
+
+  portability:
+    name: Portability (python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.9", "3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Fire Test on old and new Pythons
+        run: |
+          python scripts/firetest.py
+          python scripts/firetest.py --list > /dev/null
+
+  changelog:
+    name: Changelog carries the version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: The shipped version has an entry
+        run: |
+          python - <<'EOF'
+          import json, pathlib, re, sys
+          version = json.loads(pathlib.Path(".claude-plugin/plugin.json").read_text())["version"]
+          changelog = pathlib.Path("CHANGELOG.md").read_text()
+          if f"## [{version}]" not in changelog:
+              print(f"plugin.json ships {version} but CHANGELOG.md has no entry for it")
+              sys.exit(1)
+          print(f"changelog carries {version}")
           EOF
