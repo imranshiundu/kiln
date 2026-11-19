@@ -129,6 +129,11 @@ def check_skill(folder):
     # --- title present, matches the craft ---
     if not re.search(r"^# (.+)$", body, re.M):
         err(name, "missing H1 title")
+    else:
+        title = re.search(r"^# (.+)$", body, re.M).group(1).lower()
+        parts = name.split("-")
+        if not all(p in title for p in parts):
+            err(name, f"H1 title does not carry the name's words: {parts}")
 
 
 def check_cross_references(skill_names):
@@ -203,6 +208,27 @@ def print_inventory(inv, as_json=False):
           + ", ".join(f"{p} {len(v)}" for p, v in sorted(by_phase.items())))
 
 
+def check_routing(inventory):
+    """The library's routing must stay honest: no two skills answering
+    to the same opening, every lifecycle phase crewed, every title
+    carrying its name."""
+    # duplicate description openings - two doors with the same hinge
+    seen = {}
+    for s in inventory:
+        opening = " ".join(s["trigger"].lower().split()[:6])
+        if opening in seen:
+            err(s["name"], f"trigger opens like `{seen[opening]}` — routing "
+                            "needs distinct doors, split or sharpen them")
+        else:
+            seen[opening] = s["name"]
+    # every lifecycle phase crewed
+    phases = {s["phase"] for s in inventory}
+    for phase in PHASES - {"meta"}:
+        if phase not in phases:
+            err("_library", f"phase `{phase}` has no skills — the map has "
+                            "an empty fire")
+
+
 def main():
     args = parse_args()
     if not SKILLS.is_dir():
@@ -212,6 +238,7 @@ def main():
     for folder in folders:
         check_skill(folder)
     check_cross_references([f.name for f in folders])
+    check_routing(load_inventory())
 
     if args.list:
         print_inventory(load_inventory(), args.json)

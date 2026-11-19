@@ -1,6 +1,6 @@
 ---
 name: commit-with-care
-description: Treats the commit as a work artifact - one logical change per commit, every commit green, the message explains why. Use when work is about to be saved, a branch has become one blob before merging, or history will ever need bisecting.
+description: Treats the commit as a work artifact - one logical change per commit, every commit green, the message explains why. Use when committing work, a branch has become one blob before merging, or history will ever need bisecting.
 license: MIT
 metadata:
   phase: build
