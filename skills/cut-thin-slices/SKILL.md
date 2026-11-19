@@ -12,7 +12,7 @@ metadata:
 
 The project walks before it runs: a smallest end-to-end skeleton is live
 early, and every slice after it — small, vertical, demonstrably working —
-leaves the system better than the previous commit found it. At any
+leaves the system better than it found it. At any
 moment, "how much is done?" is answerable by *what works*, not by
 percentage guesses.
 
@@ -41,8 +41,8 @@ percentage guesses.
    end-to-end → commit. Never hold two unfinished slices — the
    integration debt compounds and hides.
 4. **Make every commit a safe stopping point.** Tests green, system
-   runs, story intact. A stranger landing on any commit should be able
-   to build, run, and see *something* work.
+   runs, story intact. A stranger landing on any commit can build,
+   run, and see *something* work.
 5. **Fake what you must, name what you faked.** In-memory store for the
    first slice, a hardcoded value for the second — fine, if the fake is
    named and the slice is real. A vertical slice may contain a
@@ -50,8 +50,8 @@ percentage guesses.
 6. **When a slice feels too big to hold, cut it again.** If you can't
    describe the slice in one sentence, it's two slices. If you can't
    finish it in one sitting, it's two slices.
-7. **Demo each slice before starting the next.** Show the working thing
-   — run it, show the output, get the nod. A slice nobody has seen
+7. **Demo each slice before starting the next.** Run it, show the
+   output, get the nod. A slice nobody has seen
    working is a slice that may not work.
 
 ## Red flags
