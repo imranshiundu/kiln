@@ -120,6 +120,24 @@ Each box checked moves one row up a status level, with the output
 recorded here. That is the whole method: no row gets promoted without
 evidence.
 
+## How skills.sh listings work (a finding)
+
+There is no submission form, no registry PR, no listing to request.
+skills.sh is populated by the skills CLI's anonymous install
+telemetry for public repositories — a repo appears as real users
+run `npx skills add <owner>/<repo>` and its install counts accrue.
+(Confirmed from the CLI's own docs, `docs/api.md` in
+[vercel-labs/skills](https://github.com/vercel-labs/skills):
+install and remove calls send the telemetry, `DISABLE_TELEMETRY=1`
+and `DO_NOT_TRACK=1` always turn it off.)
+
+What that means for KILN: the listing arrives when the first real
+installs do. The install path itself is verified on this page, and
+the sibling [OCD](https://github.com/imranshiundu/OCD) — same
+layout family, installed from GitHub — already carries its listing
+the same way. Nothing to submit; something to be used into
+existence.
+
 ## Why plain Markdown wins here
 
 Every KILN skill is a folder with one `SKILL.md` — YAML frontmatter
