@@ -86,6 +86,29 @@ A skill ships only if it passes all six:
 6. **Credited.** Where a craft distills known practice, the source is
    named in the body. Craft knowledge is inherited, not invented.
 
+## The Fire Test, mechanically
+
+Four of the six are enforced by software —
+[`scripts/firetest.py`](../scripts/firetest.py), run by CI on every
+push and PR, so the bar holds even when nobody is looking:
+
+| Test | Mechanical check |
+| :- | :- |
+| 1. One craft | the name is kebab-case, matches its folder, and the H1 carries its words — a craft that drifted from its name is a craft that split |
+| 2. Triggerable | the description contains a `Use when` clause, stays within two sentences and 1024 characters — and no two skills may open their trigger with the same six words |
+| 3. Workflow, not prose | the five sections exist, in order, and the Workflow carries numbered steps |
+| 5. Lean | body under ~500 words (hard fail at 600) |
+| — library integrity | every skill is referenced by the README, AGENTS.md, and the lifecycle map; every phase carries at least one skill; a skill folder holds one file |
+
+Tests 4 and 6 — evidence over claims, credited — stay human
+judgment, which is what the review templates ask for by hand. The
+checker also proves it can fail: [`tests/run.sh`](../tests/run.sh)
+breaks a miniature library fourteen ways and asserts each break is
+caught. A checker that cannot fail is a rubber stamp.
+
+Run it locally before pushing: `make check` (or
+`python3 scripts/firetest.py --strict` for the no-warnings bar).
+
 ## Conventions
 
 - **Flat layout.** All skills live at `skills/<name>/SKILL.md` — no
