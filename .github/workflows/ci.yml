@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  firetest:
+    name: Fire Test (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run the Fire Test
+        run: python scripts/firetest.py
+
+      - name: Prove the Fire Test can fail
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          # A skill that breaks the contract must fail the test.
+          # Sabotage one copy, expect a non-zero exit, restore.
+          cp skills/hunt-the-bug/SKILL.md /tmp/SKILL.md.bak
+          sed -i 's/^## North Star/## Northstar (broken)/' skills/hunt-the-bug/SKILL.md
+          if python scripts/firetest.py > /dev/null 2>&1; then
+            echo "FIRE TEST PASSED A BROKEN SKILL - the checker is broken"
+            exit 1
+          fi
+          mv /tmp/SKILL.md.bak skills/hunt-the-bug/SKILL.md
+          python scripts/firetest.py
+
+      - name: Manifest sanity
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          python - <<'EOF'
+          import json, re, pathlib, sys
+          root = pathlib.Path(".")
+          skills = sorted(p.name for p in (root / "skills").iterdir() if p.is_dir())
+          pj = json.loads((root / ".claude-plugin/plugin.json").read_text())
+          mj = json.loads((root / ".claude-plugin/marketplace.json").read_text())
+          m = re.search(r"(\d+) agent skills", mj["plugins"][0]["description"])
+          stated = int(m.group(1)) if m else -1
+          if stated != len(skills):
+              print(f"marketplace.json says {stated} skills; skills/ has {len(skills)}")
+              sys.exit(1)
+          print(f"manifests agree: {len(skills)} skills, plugin version {pj['version']}")
+          EOF

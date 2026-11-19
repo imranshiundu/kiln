@@ -14,21 +14,27 @@ The library exists and can be used by anyone, anywhere.
 - [x] Installs as a Claude Code plugin marketplace
 - [x] Research survey with all prior art credited ([docs/research.md](docs/research.md))
 
-## v0.2 — The Second Firing (next)
+## v0.2 — The Second Firing (shipped 2026-11-20)
 
 Deepen the phases that real projects burn most: data, interfaces, and the
 running system.
 
-- [ ] `observe-the-system` (ship) — logging, metrics, and tracing chosen
+- [x] `observe-the-system` (ship) — logging, metrics, and tracing chosen
       *with* the first feature, not after the first incident
-- [ ] `measure-then-optimize` (verify) — profile before optimizing;
+- [x] `measure-then-optimize` (verify) — profile before optimizing;
       no performance claim without a number
-- [ ] `test-the-contract` (verify) — contract tests at the boundaries
+- [x] `test-the-contract` (verify) — contract tests at the boundaries
       the interface design promised
-- [ ] `migrate-gently` (tend) — data migrations that never lose data,
+- [x] `migrate-gently` (tend) — data migrations that never lose data,
       one reversible step at a time
+- [x] The Fire Test runs mechanically in CI on every push and PR
+      (`scripts/firetest.py`), pulled forward from v1.0 because four new
+      skills needed the bar enforced, not remembered
 - [ ] A tested install matrix: verify KILN loads identically in Claude
       Code, OpenCode, Cursor, and Codex, documented per agent
+      ([docs/install-matrix.md](docs/install-matrix.md) now exists with
+      honest VERIFIED / DOCUMENTED labels — the live runs are the
+      remaining work)
 - [ ] A `npx skills` listing page and skills.sh submission
 
 ## v1.0 — The Mature Kiln (later)
@@ -38,8 +44,9 @@ Trustworthy because measured, not merely written.
 - [ ] One eval scenario per skill: a scripted session that demonstrates
       the craft firing correctly — and a failing baseline without the
       skill
-- [ ] A contribution pipeline with the Fire Test as an actual checklist
-      in CI (frontmatter validation, word budget, section anatomy)
+- [x] A contribution pipeline with the Fire Test as an actual checklist
+      in CI (frontmatter validation, word budget, section anatomy) —
+      shipped early, in v0.2
 - [ ] Real adoption notes: which skills fire most, which get ignored,
       and what that teaches the map
 - [ ] Translations of the doctrine (AGENTS.md) for non-English-first teams

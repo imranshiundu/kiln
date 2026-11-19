@@ -38,6 +38,9 @@ describes:
 - One skill per PR (or a docs change).
 - The PR description answers: *what craft is this, which phase, what does
   it replace or add, where did the craft come from?*
+- CI runs the Fire Test mechanically (`python3 scripts/firetest.py`) —
+  run it locally before pushing; a red Fire Test is a closed PR, and
+  that is the point.
 - Include evidence of the skill firing — a transcript, a screenshot, a
   session log. A skill that has never fired in a real agent is a draft.
 
