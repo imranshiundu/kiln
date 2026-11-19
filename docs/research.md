@@ -155,7 +155,13 @@ The skills themselves distill named practice, credited inside each body:
 - Skills are instructions, not guarantees — the ecosystem's own eval work
   (e.g. superpowers-evals) is where efficacy gets measured. KILN v1.0
   plans per-skill eval scenarios for the same reason (see
-  [ROADMAP.md](../ROADMAP.md)).
+  [ROADMAP.md](../ROADMAP.md)). What exists today is narrower: the
+  *format* is enforced mechanically (the Fire Test in CI, with the
+  checker's own test suite), and the *install path* is verified live
+  for two agent targets
+  ([install-matrix.md](install-matrix.md)) — but firing behavior in
+  real sessions is still evidenced by author transcripts, not by
+  scripted evals.
 - Star counts are a popularity snapshot (October 2026), not a quality
   claim.
 - The ecosystem moves weekly. When this document and reality disagree,
