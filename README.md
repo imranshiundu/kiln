@@ -22,7 +22,7 @@
 
 A kiln turns soft clay into enduring craft. **KILN turns a capable agent into a complete builder.**
 
-Agents write code fast. What they skip — unless taught — are the crafts that make software last: interrogating the request before building, writing the spec, modeling the data, testing first, hunting root causes instead of symptoms, hardening the edges, documenting the why. KILN is those crafts, written down as agent skills: **one craft per skill, each a workflow with gates and evidence requirements, not an essay.**
+Agents write code fast. What they skip — unless taught — are the crafts that make software last: interrogating the request before building, reading an unfamiliar codebase before editing it, writing the spec, modeling the data, testing first, committing with care, hunting root causes instead of symptoms, testing the edges and the contracts, making interfaces everyone can use, observing the running system, releasing deliberately, migrating gently, documenting the why. KILN is those crafts, written down as agent skills: **one craft per skill, each a workflow with gates and evidence requirements, not an essay.**
 
 This is not a pile of prompts. It is a *lifecycle* — a researched map of what it takes to build a whole thing, with a skill waiting at every phase.
 
@@ -153,9 +153,11 @@ they are the bar.
 | [`docs/lifecycle.md`](docs/lifecycle.md) | The map — the seven fires, their inputs, outputs, and the smell of skipping each |
 | [`docs/research.md`](docs/research.md) | The receipts — the field survey of the agent-skills ecosystem, every influence credited |
 | [`docs/install-matrix.md`](docs/install-matrix.md) | Per-agent install commands with honest status labels — what's verified, what's documented |
+| [`docs/glossary.md`](docs/glossary.md) | The vocabulary pinned — fire, craft, trigger, gate, receipt, the bar |
 | [`ROADMAP.md`](ROADMAP.md) | **The direction** — where KILN goes next, and what it will never be |
 | [`CHANGELOG.md`](CHANGELOG.md) | What shipped, when, and why |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to fire a new skill into the library |
+| [`SECURITY.md`](SECURITY.md) | What security means for a library of prose, and how to report |
 
 ## Principles
 
