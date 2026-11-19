@@ -8,7 +8,7 @@
     {
       "name": "kiln",
       "source": "./",
-      "description": "Raw ideas in. Finished software out. A research-backed library of 19 agent skills covering the full lifecycle of building software: gather, spec, design, build, verify, ship, tend.",
+      "description": "Raw ideas in. Finished software out. A research-backed library of 25 agent skills covering the full lifecycle of building software: gather, spec, design, build, verify, ship, tend.",
       "category": "skills"
     }
   ]

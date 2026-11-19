@@ -133,7 +133,7 @@ fi
 
 # --- golden inventory: metadata drift must be a conscious act ---
 if python3 "$FIRETEST" --list --json > "$WORK/inventory.json" 2>/dev/null; then
-  if diff -u "$HERE/golden/inventory.json" "$WORK/inventory.json" > "$WORK/diff.txt"; then
+  if diff -u --strip-trailing-cr "$HERE/golden/inventory.json" "$WORK/inventory.json" > "$WORK/diff.txt"; then
     pass=$((pass + 1)); echo "  PASS: inventory matches the golden snapshot"
   else
     fail=$((fail + 1)); echo "  FAIL: inventory drifted from the golden snapshot — skills changed without regenerating it:"
