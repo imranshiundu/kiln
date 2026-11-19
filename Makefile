@@ -3,7 +3,7 @@
 # The library is Markdown; the tooling is two Python files and a
 # test runner. This Makefile is the front door to all of it.
 
-.PHONY: help firetest strict inventory check fixtures snapshot clean
+.PHONY: help firetest strict inventory index check fixtures snapshot clean
 
 help: ## show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) \
@@ -26,3 +26,6 @@ fixtures: ## rebuild the mini fixture library
 
 snapshot: ## regenerate the golden inventory snapshot (after metadata changes)
 	python3 scripts/firetest.py --list --json > tests/golden/inventory.json
+
+index: ## regenerate docs/index.md from the live inventory
+	python3 scripts/gen_index.py
