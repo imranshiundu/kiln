@@ -43,6 +43,7 @@ nothing until you need them.
    | verify | `review-the-work` | work is about to be presented as done |
    | verify | `measure-then-optimize` | something is slow and a fix is being proposed without numbers |
    | verify | `test-the-contract` | a published boundary is about to change shape |
+   | verify | `test-the-edges` | the suite is green but trust is low, or inputs come from outside |
    | ship | `harden-the-edges` | the work faces real users, real data, real attackers |
    | ship | `open-the-gates` | a release must go out and come back safely |
    | ship | `observe-the-system` | a service is born, or an incident found you flying blind |

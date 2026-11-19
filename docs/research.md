@@ -83,6 +83,9 @@ The skills themselves distill named practice, credited inside each body:
   (Spinellis' *Code Reading*; Hermans' *The Programmer's Brain* on
   cognition while reading); the traced request as the unit of
   understanding.
+- **`test-the-edges`** — boundary value analysis (Myers' classic
+  testing literature); property-based testing, QuickCheck
+  (Claessen and Hughes, 2000), Hypothesis.
 - **`make-it-accessible`** — WCAG 2.2 (W3C), Pickering's
   *Inclusive Components*, Deque's axe rules; semantics first,
   keyboard-complete, both automated and human testing.
