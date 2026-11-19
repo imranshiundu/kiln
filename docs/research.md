@@ -77,55 +77,78 @@ addyosmani-style constraint checklist can gate `review-the-work`.
 The skills themselves distill named practice, credited inside each body:
 
 - **`question-first`** — one-question-at-a-time requirements interviewing,
-  echoed by both superpowers (`brainstorming`) and addyosmani
+  echoed by both [superpowers](https://github.com/obra/superpowers)
+  (`brainstorming`) and
+  [addyosmani](https://github.com/addyosmani/agent-skills)
   (`interview-me`).
 - **`read-the-codebase`** — deliberate exploration of unfamiliar code
-  (Spinellis' *Code Reading*; Hermans' *The Programmer's Brain* on
-  cognition while reading); the traced request as the unit of
+  (Spinellis' [*Code Reading*](https://www.spinellis.gr/books/reading/);
+  Hermans' [*The Programmer's Brain*](https://www.manning.com/books/the-programmer-s-brain)
+  on cognition while reading); the traced request as the unit of
   understanding.
-- **`test-the-edges`** — boundary value analysis (Myers' classic
-  testing literature); property-based testing, QuickCheck
-  (Claessen and Hughes, 2000), Hypothesis.
-- **`make-it-accessible`** — WCAG 2.2 (W3C), Pickering's
-  *Inclusive Components*, Deque's axe rules; semantics first,
+- **`test-the-edges`** — boundary value analysis (Myers, *The Art of
+  Software Testing*); property-based testing — QuickCheck
+  ([Claessen and Hughes, 2000](https://doi.org/10.1145/351240.351266)),
+  with [Hypothesis](https://hypothesis.readthedocs.io/) carrying the
+  discipline into mainstream stacks.
+- **`make-it-accessible`** — [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
+  (W3C), Pickering's [*Inclusive
+  Components*](https://inclusive-components.design/), Deque's
+  [axe](https://github.com/dequelabs/axe-core) rules; semantics first,
   keyboard-complete, both automated and human testing.
-- **`commit-with-care`** — the commit as a work artifact (Tim Pope's
-  commit-message note; the bisect discipline it enables).
+- **`commit-with-care`** — the commit as a work artifact ([Tim Pope's
+  commit-message
+  note](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html);
+  the `git bisect` discipline it enables).
 - **`estimate-with-ranges`** — ranges with confidence and named
-  assumptions; the cone of uncertainty (Boehm, via McConnell's
-  *Software Estimation*); estimate and commitment kept separate.
-- **`test-first`** — TDD's red-green-refactor (Beck), the test pyramid
-  and DAMP-over-DRY (Software Engineering at Google), plus the honest
-  edge: where TDD is the wrong tool.
+  assumptions; the cone of uncertainty (Boehm, 1981, via McConnell's
+  *Software Estimation*, 2006); estimate and commitment kept separate.
+- **`test-first`** — TDD's red-green-refactor (Beck, *Test-Driven
+  Development by Example*), the test pyramid and DAMP-over-DRY
+  ([*Software Engineering at Google*](https://abseil.io/resources/swe-book)),
+  plus the honest edge: where TDD is the wrong tool.
 - **`hunt-the-bug`** — four-phase root-cause discipline
   (`systematic-debugging` in superpowers; the reduce-and-fix loop
   everywhere).
-- **`design-the-interface`** — contract-first design; Hyrum's Law.
-- **`refactor-with-care`** — Chesterton's Fence (Boulding), small named
-  moves (Fowler).
+- **`design-the-interface`** — contract-first design;
+  [Hyrum's Law](https://www.hyrumslaw.com/).
+- **`refactor-with-care`** — Chesterton's Fence (Chesterton, named by
+  Boulding), small named moves
+  ([Fowler](https://refactoring.com/)).
 - **`review-the-work`** — severity-tagged findings, review-the-diff-not-
-  the-memory (Google's eng-practices review guide).
-- **`harden-the-edges`** — boundary enumeration; OWASP's mental model
-  without OWASP's checklist bloat.
+  the-memory (Google's [eng-practices](https://google.github.io/eng-practices/)
+  review guide).
+- **`harden-the-edges`** — boundary enumeration; [OWASP](https://owasp.org/)'s
+  mental model without its checklist bloat.
 - **`open-the-gates`** — "faster is safer"; small releases, real rollback
-  plans (Accelerate / DORA).
-- **`observe-the-system`** — the SRE monitoring discipline (Google's
-  SRE book), Sridharan's observability writing, OpenTelemetry's
+  plans (*Accelerate* / [DORA](https://dora.dev/)).
+- **`observe-the-system`** — the SRE monitoring discipline
+  ([Google's SRE book](https://sre.google/books/)), Sridharan's
+  *Observability Engineering*, [OpenTelemetry](https://opentelemetry.io/)'s
   three-signal model; questions-first instrumentation.
-- **`measure-then-optimize`** — Knuth on premature optimization (1974);
-  Gregg's systems-performance methodology; measure-change-measure,
-  serially.
-- **`test-the-contract`** — consumer-driven contracts (Robinson,
-  Fowler), Pact's machinery, Hyrum's Law as the reason the promise
-  must be pinned by machinery, not memory.
-- **`migrate-gently`** — expand-migrate-contract (Sato), Fowler's
-  Parallel Change; reversible steps, batched idempotent backfills.
-- **`tend-the-dependencies`** — the SemVer contract (Preston-Werner);
-  the automation discipline of Renovate and Dependabot, run by
-  hand where the project runs none.
-- **`document-the-why`** — ADRs (Nygard), docs-for-the-2am-reader.
-- **`fire-a-skill`** — meta-skill pattern (superpowers `writing-skills`;
-  Anthropic's skill-authoring best practices).
+- **`measure-then-optimize`** — Knuth on premature optimization
+  ([1974](https://dl.acm.org/doi/10.1145/356635.356640));
+  [Gregg](https://www.brendangregg.com/systems-performance.html)'s
+  systems-performance methodology; measure-change-measure, serially.
+- **`test-the-contract`** — consumer-driven contracts ([Robinson,
+  2006](https://martinfowler.com/articles/consumerDrivenContracts.html)),
+  [Pact](https://docs.pact.io/)'s machinery, Hyrum's Law as the reason
+  the promise must be pinned by machinery, not memory.
+- **`migrate-gently`** — expand-migrate-contract (Sato, 2009), Fowler's
+  [Parallel
+  Change](https://martinfowler.com/bliki/ParallelChange.html);
+  reversible steps, batched idempotent backfills.
+- **`tend-the-dependencies`** — the [SemVer](https://semver.org/)
+  contract (Preston-Werner); the automation discipline of
+  [Renovate](https://docs.renovatebot.com/) and
+  [Dependabot](https://docs.github.com/en/code-security/dependabot),
+  run by hand where the project runs none.
+- **`document-the-why`** — ADRs ([Nygard](https://adr.github.io/)),
+  docs-for-the-2am-reader.
+- **`fire-a-skill`** — the meta-skill pattern
+  ([superpowers](https://github.com/obra/superpowers) `writing-skills`;
+  [anthropics/skills](https://github.com/anthropics/skills) authoring
+  guidance).
 
 ## Honest limits of this research
 
