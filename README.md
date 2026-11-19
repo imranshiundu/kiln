@@ -38,7 +38,7 @@ Real work loops through these out of order and that is fine — the map is a com
 
 ## The skills
 
-24 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
+25 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
 
 | Phase | Skill | Fires when |
 | :- | :- | :- |
@@ -65,6 +65,7 @@ Real work loops through these out of order and that is fine — the map is a com
 | **tend** | [`refactor-with-care`](skills/refactor-with-care/SKILL.md) | structure improves without behavior changing |
 | **tend** | [`document-the-why`](skills/document-the-why/SKILL.md) | the next reader needs more than the code says |
 | **tend** | [`migrate-gently`](skills/migrate-gently/SKILL.md) | persistent data or interfaces must change while running |
+| **tend** | [`tend-the-dependencies`](skills/tend-the-dependencies/SKILL.md) | updates are pending, a lockfile drifts, or a major is being rushed |
 | **meta** | [`fire-a-skill`](skills/fire-a-skill/SKILL.md) | KILN itself needs a new skill |
 
 ## Install

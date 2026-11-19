@@ -139,9 +139,11 @@ found.
 
 **Outputs.** Behavior-preserving refactors with green tests on both sides
 of the change; documentation that answers *why* for the reader who arrives
-at 2am during an incident.
+at 2am during an incident; dependencies current by evidence — changelogs
+read, batches verified, majors planned.
 
-**Skills.** `refactor-with-care`, `document-the-why`, `migrate-gently`
+**Skills.** `refactor-with-care`, `document-the-why`, `migrate-gently`,
+`tend-the-dependencies`
 
 **The smell of skipping it.** The rewrite-in-place nobody asked for, mixing
 "cleanup" with behavior changes; comments that narrate the code instead of

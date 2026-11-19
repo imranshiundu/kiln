@@ -120,6 +120,9 @@ The skills themselves distill named practice, credited inside each body:
   must be pinned by machinery, not memory.
 - **`migrate-gently`** — expand-migrate-contract (Sato), Fowler's
   Parallel Change; reversible steps, batched idempotent backfills.
+- **`tend-the-dependencies`** — the SemVer contract (Preston-Werner);
+  the automation discipline of Renovate and Dependabot, run by
+  hand where the project runs none.
 - **`document-the-why`** — ADRs (Nygard), docs-for-the-2am-reader.
 - **`fire-a-skill`** — meta-skill pattern (superpowers `writing-skills`;
   Anthropic's skill-authoring best practices).

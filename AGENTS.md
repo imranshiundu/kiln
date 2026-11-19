@@ -50,6 +50,7 @@ nothing until you need them.
    | tend | `refactor-with-care` | structure improves without behavior changing |
    | tend | `document-the-why` | the next reader needs more than the code says |
    | tend | `migrate-gently` | persistent data or interfaces must change while running |
+   | tend | `tend-the-dependencies` | updates are pending, a lockfile drifts, or a major is being rushed |
    | meta | `fire-a-skill` | KILN itself needs a new skill |
 
 3. **Fire it.** Load that skill's `SKILL.md` and follow its workflow exactly.
