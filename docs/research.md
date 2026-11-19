@@ -138,6 +138,9 @@ The skills themselves distill named practice, credited inside each body:
   [Parallel
   Change](https://martinfowler.com/bliki/ParallelChange.html);
   reversible steps, batched idempotent backfills.
+- **`rehearse-the-failure`** — the [Principles of Chaos
+  Engineering](https://principlesofchaos.org) (steady-state hypotheses,
+  blast radius); Rosenthal and Jones' *Chaos Engineering*.
 - **`run-the-postmortem`** — blameless postmortems ([Etsy / Allspaw,
   2012](https://www.etsy.com/codeascraft/blameless-postmortems)); the
   [SRE book's postmortem

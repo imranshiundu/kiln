@@ -121,9 +121,11 @@ real adversaries — in a way it can survive and come back from.
 notes, a staged rollout, and a rollback plan that has actually been
 touched; the three signals — logs, metrics, traces — chosen with the
 first feature, so the system can explain itself when reality answers
-back.
+back; the feared failures rehearsed on controlled ground before
+reality runs the drill instead.
 
-**Skills.** `harden-the-edges`, `open-the-gates`, `observe-the-system`
+**Skills.** `harden-the-edges`, `open-the-gates`, `observe-the-system`,
+`rehearse-the-failure`
 
 **The smell of skipping it.** The Friday 5pm deploy "because it's a small
 change"; secrets committed temporarily; the first user finding the first

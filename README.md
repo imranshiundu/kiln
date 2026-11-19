@@ -51,7 +51,7 @@ Real work loops through these out of order and that is fine — the map is a com
 
 ## The skills
 
-26 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
+27 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
 
 | Phase | Skill | Fires when |
 | :- | :- | :- |
@@ -75,6 +75,7 @@ Real work loops through these out of order and that is fine — the map is a com
 | **ship** | [`harden-the-edges`](skills/harden-the-edges/SKILL.md) | the work faces real users, real data, real attackers |
 | **ship** | [`open-the-gates`](skills/open-the-gates/SKILL.md) | a release must go out and come back safely |
 | **ship** | [`observe-the-system`](skills/observe-the-system/SKILL.md) | a service is born without its signals, or an incident finds you blind |
+| **ship** | [`rehearse-the-failure`](skills/rehearse-the-failure/SKILL.md) | the system faces reality soon, and the rollback plan has never once been run |
 | **tend** | [`refactor-with-care`](skills/refactor-with-care/SKILL.md) | structure improves without behavior changing |
 | **tend** | [`document-the-why`](skills/document-the-why/SKILL.md) | the next reader needs more than the code says |
 | **tend** | [`migrate-gently`](skills/migrate-gently/SKILL.md) | persistent data or interfaces must change while running |

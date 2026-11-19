@@ -114,6 +114,12 @@
     "trigger": "Use when cleaning up code that works, renaming for clarity, or untangling structure - without any intended behavior change."
   },
   {
+    "name": "rehearse-the-failure",
+    "phase": "ship",
+    "words": 402,
+    "trigger": "Use when the system is about to face reality - a launch, a migration, a high-stakes weekend - and the rollback plan has never been executed."
+  },
+  {
     "name": "review-the-work",
     "phase": "verify",
     "words": 498,
