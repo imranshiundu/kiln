@@ -168,6 +168,29 @@ they are the bar.
 5. **Tool-agnostic.** KILN follows the open [Agent Skills](https://agentskills.io) standard — no frontmatter tricks, no vendor lock, installs anywhere.
 6. **Standing on shoulders.** KILN synthesizes decades of engineering practice and the best of the skills ecosystem, with prior art named in [`docs/research.md`](docs/research.md).
 
+## How KILN maintains itself
+
+A library that preaches evidence runs on its own medicine:
+
+- **The Fire Test is software.** Every push and PR runs
+  [`scripts/firetest.py`](scripts/firetest.py) — frontmatter
+  contract, five-section anatomy, word budget, routing integrity —
+  on Linux, macOS, and Windows, across Python 3.9–3.13.
+- **The checker polices itself.** [`tests/run.sh`](tests/run.sh)
+  breaks a miniature library fourteen ways and asserts each break
+  is caught; a checker that cannot fail is a rubber stamp.
+- **Metadata drift is a diff, not a surprise.** The golden inventory
+  snapshot fails CI when a skill's trigger or phase changes without
+  its snapshot regenerating in the same commit.
+- **Releases publish themselves** from tags, with the changelog
+  section as notes, gated on tag/version match. A shipped version
+  without a changelog entry fails CI before it fails a user.
+- **The templates are the bar in question form.** The propose-a-craft
+  issue template walks a proposer through the Fire Test; a PR
+  template asks for the receipts.
+- **The dependencies stay current** the way `tend-the-dependencies`
+  teaches: Dependabot opens the batch, CI verifies it.
+
 ## Prior art
 
 KILN would not exist without these. They are excellent — go read them:
