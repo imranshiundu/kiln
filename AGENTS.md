@@ -61,6 +61,36 @@ nothing until you need them.
    it is complete when its exit criteria are met *with evidence* — commands
    run, output shown, artifacts written.
 
+## A bug report walks the fires
+
+The doctrine in motion — a real request moving through the map:
+
+| The moment | The fire | The skill that fires |
+| :- | :- | :- |
+| "Users say checkout sometimes charges twice" | verify | `hunt-the-bug` — reproduce reliably before anything else |
+| The reproduction needs the payment service's logs | ship | `observe-the-system` — the questions the signals must answer were wired when the service was born; if they weren't, that gap is now a finding |
+| Root cause found: a retry race on the callback | build | `test-first` — the guard is written from the reduction, before the fix |
+| The fix changes the callback's payload | verify | `test-the-contract` — the published boundary stays pinned through the change |
+| "Ship it — how big is the risk?" | spec | `estimate-with-ranges` — a range with confidence, not a vibe |
+| The fix goes out | ship | `open-the-gates` — small release, notes, rollback rehearsed |
+| Why the race existed at all | tend | `document-the-why` — the 2am reader inherits the answer |
+
+Seven fires, one report, no drama. The skill loads when its moment
+arrives and not before.
+
+## What KILN is not
+
+- **Not a methodology.** It teaches crafts; you compose them. Nobody
+  here tells you how to run your team.
+- **Not a catalog.** Every skill passed the Fire Test or it isn't in.
+  A thousand-skill list is a search problem, not a library.
+- **Not stack-specific.** No React skill, no Rails skill, no vendor
+  skills. Stack knowledge lives in stack libraries, deep and happy.
+- **Not a prompt dump.** The lifecycle is software because that is
+  the honest boundary of the research behind it.
+
+The full reasoning lives in [ROADMAP.md](ROADMAP.md#non-goals).
+
 ## Rules of engagement
 
 - **One craft at a time.** Load a skill, do the craft, move on. Do not hoard
