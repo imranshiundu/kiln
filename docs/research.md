@@ -44,9 +44,9 @@ out of the box.
 
 | Library | What it is | What KILN took |
 | :- | :- | :- |
-| [anthropics/skills](https://github.com/anthropics/skills) (180k★) | The official repo: document skills (docx/pdf/pptx/xlsx) and examples, plus the spec and a template | The template discipline; that complex crafts (document generation) fit the format fine |
-| [obra/superpowers](https://github.com/obra/superpowers) (300k★) | A complete *methodology* built on composable skills: brainstorming → writing-plans → TDD → systematic-debugging → code review → finishing branches, with a meta-skill (`writing-skills`) and the "evidence over claims" philosophy | The philosophy (systematic over ad-hoc; verification before completion); the meta-skill pattern; that a skills library can *be* a way of working |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) (107k★) | Production engineering culture encoded: DEFINE→PLAN→BUILD→VERIFY→REVIEW→SHIP lifecycle commands; anti-rationalization tables; five-axis review; Hyrum's Law in API design; Chesterton's Fence in simplification | The anti-rationalization idea (skills must name the excuses agents make); the craft sourcing from *Software Engineering at Google*; that a lifecycle gives a library a spine |
+| [anthropics/skills](https://github.com/anthropics/skills) (197k★) | The official repo: document skills (docx/pdf/pptx/xlsx) and examples, plus the spec and a template | The template discipline; that complex crafts (document generation) fit the format fine |
+| [obra/superpowers](https://github.com/obra/superpowers) (322k★) | A complete *methodology* built on composable skills: brainstorming → writing-plans → TDD → systematic-debugging → code review → finishing branches, with a meta-skill (`writing-skills`) and the "evidence over claims" philosophy | The philosophy (systematic over ad-hoc; verification before completion); the meta-skill pattern; that a skills library can *be* a way of working |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) (119k★) | Production engineering culture encoded: DEFINE→PLAN→BUILD→VERIFY→REVIEW→SHIP lifecycle commands; anti-rationalization tables; five-axis review; Hyrum's Law in API design; Chesterton's Fence in simplification | The anti-rationalization idea (skills must name the excuses agents make); the craft sourcing from *Software Engineering at Google*; that a lifecycle gives a library a spine |
 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | The #1 skills library for a single domain (science) | That depth in one domain beats shallow breadth across many |
 | [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | A curated catalog of 1000+ community skills | That curation is the value; 1000 skills is a search problem, not a library |
 | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Design-taste as a skill | That "soft" judgments (taste, voice) can be encoded as workflows too |
@@ -162,7 +162,7 @@ The skills themselves distill named practice, credited inside each body:
   ([install-matrix.md](install-matrix.md)) — but firing behavior in
   real sessions is still evidenced by author transcripts, not by
   scripted evals.
-- Star counts are a popularity snapshot (October 2026), not a quality
-  claim.
+- Star counts are a popularity snapshot (refreshed November 2026), not
+  a quality claim.
 - The ecosystem moves weekly. When this document and reality disagree,
   believe reality, then send a PR.
