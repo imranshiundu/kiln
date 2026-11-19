@@ -1,7 +1,7 @@
 {
   "name": "kiln",
   "description": "Raw ideas in. Finished software out. A research-backed library of agent skills covering the full lifecycle of building software.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Imran Shiundu",
     "url": "https://github.com/imranshiundu"
