@@ -65,13 +65,47 @@ Every phase deepened; the library opens up.
       submission process — listings fill from real install
       telemetry, so the listing arrives with the users
 
+## v0.4 — The Fourth Firing (shipped 2026-11-20)
+
+The library grows the crafts that reality keeps demanding, and the
+resources that make it navigable.
+
+- [x] `run-the-postmortem` (tend) — incidents converted into owned
+      learning: blameless, evidence-timelined, action items closed
+- [x] `rehearse-the-failure` (ship) — hypotheses drilled on
+      controlled ground; the rollback executed, not imagined
+- [x] `guide-the-reader` (tend) — user docs by Diátaxis: one job
+      per page, first success verified by running it
+- [x] `coordinate-the-disclosure` (ship) — the inbound report
+      handled as a coordinated disclosure, start to credit
+- [x] `find-the-ceiling` (verify) — "will it hold" answered with a
+      rate-at-bar, a failure order, and a date
+- [x] The [library index](docs/index.md) — every skill and its
+      trigger on one page, generated and CI-guarded
+- [x] The [field guide](docs/field-guide.md) — ten common
+      situations, routed
+- [x] The [live-fire protocol](docs/eval.md) — the two-session
+      test written down; the manual form of the v1.0 evals
+
+### Candidates not yet fired
+
+Crafts under consideration, held back until they earn it — a
+candidate needs a real session where it was improvised, badly,
+before it becomes a skill: incident command (triage and
+communication *during* the fire, not after), toil elimination
+(the SRE discipline), supply-chain verification (provenance and
+pinning). If you improvised one of these this week, open an
+issue — that improvisation is the evidence the Fire Test asks
+for.
+
 ## v1.0 — The Mature Kiln (later)
 
 Trustworthy because measured, not merely written.
 
 - [ ] One eval scenario per skill: a scripted session that demonstrates
       the craft firing correctly — and a failing baseline without the
-      skill
+      skill (the protocol is written: [docs/eval.md](docs/eval.md);
+      the scenarios are the remaining work)
 - [x] A contribution pipeline with the Fire Test as an actual checklist
       in CI (frontmatter validation, word budget, section anatomy) —
       shipped early, in v0.2
