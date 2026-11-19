@@ -131,6 +131,19 @@ else
   fail=$((fail + 1)); echo "  FAIL: soft mode rejected a 580-word body (should warn, not fail)"
 fi
 
+# --- golden inventory: metadata drift must be a conscious act ---
+if python3 "$FIRETEST" --list --json > "$WORK/inventory.json" 2>/dev/null; then
+  if diff -u "$HERE/golden/inventory.json" "$WORK/inventory.json" > "$WORK/diff.txt"; then
+    pass=$((pass + 1)); echo "  PASS: inventory matches the golden snapshot"
+  else
+    fail=$((fail + 1)); echo "  FAIL: inventory drifted from the golden snapshot — skills changed without regenerating it:"
+    sed 's/^/        /' "$WORK/diff.txt" | head -20
+    echo "        regenerate with: python3 scripts/firetest.py --list --json > tests/golden/inventory.json"
+  fi
+else
+  fail=$((fail + 1)); echo "  FAIL: --list --json did not run"
+fi
+
 echo ""
 echo "checker tests: $pass passed, $fail failed"
 [ "$fail" -eq 0 ]

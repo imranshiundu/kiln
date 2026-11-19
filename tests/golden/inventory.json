@@ -1,0 +1,152 @@
+[
+  {
+    "name": "commit-with-care",
+    "phase": "build",
+    "words": 410,
+    "trigger": "Use when committing work, a branch has become one blob before merging, or history will ever need bisecting."
+  },
+  {
+    "name": "cut-thin-slices",
+    "phase": "build",
+    "words": 497,
+    "trigger": "Use when implementation begins on anything bigger than a one-liner, or when work spans multiple layers or files."
+  },
+  {
+    "name": "decide-with-records",
+    "phase": "spec",
+    "words": 437,
+    "trigger": "Use when choosing technologies, architectures, data shapes, or any decision future builders must know was deliberate."
+  },
+  {
+    "name": "design-the-interface",
+    "phase": "design",
+    "words": 453,
+    "trigger": "Use when an API, public function set, module boundary, plugin surface, or CLI contract is born or extended."
+  },
+  {
+    "name": "document-the-why",
+    "phase": "tend",
+    "words": 487,
+    "trigger": "Use when onboarding docs are stale, a decision needs to outlive the decision-maker, or the next reader needs more than the code says."
+  },
+  {
+    "name": "estimate-with-ranges",
+    "phase": "spec",
+    "words": 394,
+    "trigger": "Use when anyone asks how long, how much, or whether it fits."
+  },
+  {
+    "name": "fire-a-skill",
+    "phase": "meta",
+    "words": 499,
+    "trigger": "Use when a craft is missing from the library and keeps being improvised."
+  },
+  {
+    "name": "ground-truth",
+    "phase": "gather",
+    "words": 464,
+    "trigger": "Use when working in an unfamiliar codebase, using a library whose version may differ from training knowledge, or building on any claim you have not personally verified."
+  },
+  {
+    "name": "harden-the-edges",
+    "phase": "ship",
+    "words": 496,
+    "trigger": "Use when work faces real users, real data, or real attackers: before launch, before handling others' data, before exposing any new endpoint or surface.\""
+  },
+  {
+    "name": "hunt-the-bug",
+    "phase": "verify",
+    "words": 481,
+    "trigger": "Use when behavior is wrong and the cause is unknown, an error keeps resurfacing, or a fix \"didn't take\"."
+  },
+  {
+    "name": "make-it-accessible",
+    "phase": "build",
+    "words": 451,
+    "trigger": "Use when building or changing anything a human will see, hear, or click."
+  },
+  {
+    "name": "measure-then-optimize",
+    "phase": "verify",
+    "words": 415,
+    "trigger": "Use when anything is slow and a fix is being proposed, guessed, or defended without numbers."
+  },
+  {
+    "name": "migrate-gently",
+    "phase": "tend",
+    "words": 481,
+    "trigger": "Use when a schema, model, stored format, or published interface must change while the system keeps running."
+  },
+  {
+    "name": "model-the-data",
+    "phase": "design",
+    "words": 457,
+    "trigger": "Use when persistent state, schemas, core domain objects, or state machines take shape."
+  },
+  {
+    "name": "observe-the-system",
+    "phase": "ship",
+    "words": 467,
+    "trigger": "Use when a service, queue, or long-running process is being built, someone debugs by print-statement, or an incident review says \"we had no way to know\"."
+  },
+  {
+    "name": "open-the-gates",
+    "phase": "ship",
+    "words": 455,
+    "trigger": "Use when a release is going out to real users, or when \"just deploying this real quick\" is being said."
+  },
+  {
+    "name": "question-first",
+    "phase": "gather",
+    "words": 413,
+    "trigger": "Use when a request has no acceptance criteria, could mean several materially different things, or the user says \"build me X\" without constraints."
+  },
+  {
+    "name": "read-the-codebase",
+    "phase": "gather",
+    "words": 468,
+    "trigger": "Use when work starts in a repository you do not know, or answers keep citing code nobody has opened."
+  },
+  {
+    "name": "refactor-with-care",
+    "phase": "tend",
+    "words": 485,
+    "trigger": "Use when cleaning up code that works, renaming for clarity, or untangling structure - without any intended behavior change."
+  },
+  {
+    "name": "review-the-work",
+    "phase": "verify",
+    "words": 498,
+    "trigger": "Use when work is about to be presented as complete, a milestone is claimed, or a change is about to be merged."
+  },
+  {
+    "name": "tend-the-dependencies",
+    "phase": "tend",
+    "words": 435,
+    "trigger": "Use when updates are pending, a lockfile drifts, or a major bump is being pushed through in a hurry."
+  },
+  {
+    "name": "test-first",
+    "phase": "build",
+    "words": 477,
+    "trigger": "Use when writing logic that must not break - business rules, parsers, state machines, bug fixes - and when a behavior change needs a permanent guard."
+  },
+  {
+    "name": "test-the-contract",
+    "phase": "verify",
+    "words": 458,
+    "trigger": "Use when an interface is published to consumers outside your test suite, or a boundary change is about to ship."
+  },
+  {
+    "name": "test-the-edges",
+    "phase": "verify",
+    "words": 450,
+    "trigger": "Use when a suite is green but trust is low, or inputs arrive from outside your control."
+  },
+  {
+    "name": "write-the-spec",
+    "phase": "spec",
+    "words": 409,
+    "trigger": "Use when an agreed idea is about to become implementation, a project or significant feature is starting, or requirements exist only in conversation."
+  }
+]
