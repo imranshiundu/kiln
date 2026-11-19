@@ -42,6 +42,12 @@
     "trigger": "Use when anyone asks how long, how much, or whether it fits."
   },
   {
+    "name": "find-the-ceiling",
+    "phase": "verify",
+    "words": 430,
+    "trigger": "Use when the system must survive real load - a launch, a peak, an event - and someone asks whether it will hold."
+  },
+  {
     "name": "fire-a-skill",
     "phase": "meta",
     "words": 499,

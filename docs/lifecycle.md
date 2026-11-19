@@ -101,10 +101,11 @@ actually built — not what you remember building.
 **Outputs.** Reproduced, root-caused, regression-guarded bug fixes; a
 review pass with findings tagged by severity and claims verified by
 commands; performance claims with numbers; boundaries pinned and
-edge cases tabled, tested, and shrunk.
+edge cases tabled, tested, and shrunk; ceilings measured as numbers
+with a named failure order, so launches are decisions, not prayers.
 
 **Skills.** `hunt-the-bug`, `review-the-work`, `measure-then-optimize`,
-`test-the-contract`, `test-the-edges`
+`test-the-contract`, `test-the-edges`, `find-the-ceiling`
 
 **The smell of skipping it.** "It should work" as a status; bugs that get
 re-closed twice; the diff reviewed by the same attention that wrote it,

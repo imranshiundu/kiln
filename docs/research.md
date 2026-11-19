@@ -130,6 +130,9 @@ The skills themselves distill named practice, credited inside each body:
   ([Google's SRE book](https://sre.google/books/)), Sridharan's
   *Observability Engineering*, [OpenTelemetry](https://opentelemetry.io/)'s
   three-signal model; questions-first instrumentation.
+- **`find-the-ceiling`** — the load-testing discipline of
+  [k6](https://grafana.com/docs/k6/) (test types, ramping, thresholds)
+  and its peers; Gregg on capacity planning.
 - **`measure-then-optimize`** — Knuth on premature optimization
   ([1974](https://dl.acm.org/doi/10.1145/356635.356640));
   [Gregg](https://www.brendangregg.com/systems-performance.html)'s

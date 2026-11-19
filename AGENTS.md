@@ -44,6 +44,7 @@ nothing until you need them.
    | verify | [`measure-then-optimize`](skills/measure-then-optimize/SKILL.md) | something is slow and a fix is being proposed without numbers |
    | verify | [`test-the-contract`](skills/test-the-contract/SKILL.md) | a published boundary is about to change shape |
    | verify | [`test-the-edges`](skills/test-the-edges/SKILL.md) | the suite is green but trust is low, or inputs come from outside |
+   | verify | [`find-the-ceiling`](skills/find-the-ceiling/SKILL.md) | a launch or a peak is coming, and someone asks whether it holds |
    | ship | [`harden-the-edges`](skills/harden-the-edges/SKILL.md) | the work faces real users, real data, real attackers |
    | ship | [`open-the-gates`](skills/open-the-gates/SKILL.md) | a release must go out and come back safely |
    | ship | [`observe-the-system`](skills/observe-the-system/SKILL.md) | a service is born, or an incident found you flying blind |

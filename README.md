@@ -51,7 +51,7 @@ Real work loops through these out of order and that is fine — the map is a com
 
 ## The skills
 
-29 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
+30 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
 
 | Phase | Skill | Fires when |
 | :- | :- | :- |
@@ -72,6 +72,7 @@ Real work loops through these out of order and that is fine — the map is a com
 | **verify** | [`measure-then-optimize`](skills/measure-then-optimize/SKILL.md) | something is slow and a fix is proposed without numbers |
 | **verify** | [`test-the-contract`](skills/test-the-contract/SKILL.md) | a published boundary is about to change shape |
 | **verify** | [`test-the-edges`](skills/test-the-edges/SKILL.md) | the suite is green but trust is low, or inputs come from outside |
+| **verify** | [`find-the-ceiling`](skills/find-the-ceiling/SKILL.md) | a launch or a peak is coming, and someone asks whether it holds |
 | **ship** | [`harden-the-edges`](skills/harden-the-edges/SKILL.md) | the work faces real users, real data, real attackers |
 | **ship** | [`open-the-gates`](skills/open-the-gates/SKILL.md) | a release must go out and come back safely |
 | **ship** | [`observe-the-system`](skills/observe-the-system/SKILL.md) | a service is born without its signals, or an incident finds you blind |
