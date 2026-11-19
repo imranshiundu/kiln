@@ -91,6 +91,8 @@ npx skills add imranshiundu/kiln
 
 The open [skills CLI](https://github.com/vercel-labs/skills) discovers and installs KILN into Claude Code, OpenCode, Cursor, Codex, GitHub Copilot, Amp, Gemini CLI, and [75+ other agents](https://github.com/vercel-labs/skills#supported-agents). Add `--list` to browse first, or `-s <skill>` to take a single craft.
 
+The install path is live-verified — the CLI's real run copied all 25 skills intact to the Claude Code and Codex targets, with outputs recorded in [docs/install-matrix.md](docs/install-matrix.md).
+
 **Claude Code:**
 
 ```
