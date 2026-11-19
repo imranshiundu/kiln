@@ -30,12 +30,40 @@ running system.
 - [x] The Fire Test runs mechanically in CI on every push and PR
       (`scripts/firetest.py`), pulled forward from v1.0 because four new
       skills needed the bar enforced, not remembered
-- [ ] A tested install matrix: verify KILN loads identically in Claude
-      Code, OpenCode, Cursor, and Codex, documented per agent
-      ([docs/install-matrix.md](docs/install-matrix.md) now exists with
-      honest VERIFIED / DOCUMENTED labels — the live runs are the
-      remaining work)
-- [ ] A `npx skills` listing page and skills.sh submission
+- [x] A tested install matrix: the skills CLI live-run is recorded
+      (Claude Code and Codex targets verified; OpenCode and Cursor
+      documented, pending a machine with those agents) —
+      [docs/install-matrix.md](docs/install-matrix.md)
+- [x] A `npx skills` listing page and skills.sh submission —
+      resolved by finding in 0.3: no submission exists; listings
+      fill from install telemetry
+
+## v0.3 — The Third Firing (shipped 2026-11-20)
+
+Every phase deepened; the library opens up.
+
+- [x] `read-the-codebase` (gather) — the traced request as the unit
+      of understanding, and a written brief with assumptions labeled
+- [x] `estimate-with-ranges` (spec) — honest numbers: ranges,
+      confidence, assumptions, re-estimates
+- [x] `commit-with-care` (build) — the commit as a work artifact
+- [x] `make-it-accessible` (build) — semantics first, keyboard
+      complete, measured contrast, both kinds of testing
+- [x] `test-the-edges` (verify) — boundary tables and properties
+      that shrink their failures
+- [x] `tend-the-dependencies` (tend) — current by evidence, not by
+      badge
+- [x] The checker holds itself: a test suite that breaks a
+      miniature library fourteen ways (`tests/run.sh`), a golden
+      inventory snapshot, `--list/--json/--strict/--root`, and new
+      routing checks — which caught a real trigger collision on
+      their first run
+- [x] Live-verified installs (skills CLI v1.9.0, two agent
+      targets) with outputs recorded in
+      [docs/install-matrix.md](docs/install-matrix.md)
+- [x] The skills.sh item, resolved by finding: there is no
+      submission process — listings fill from real install
+      telemetry, so the listing arrives with the users
 
 ## v1.0 — The Mature Kiln (later)
 
