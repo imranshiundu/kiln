@@ -13,7 +13,7 @@ metadata:
 The work has been reread as a hostile reviewer — not as its author —
 findings are tagged by severity and resolved or consciously accepted, and
 every claim in the completion report is backed by a command you ran and
-output you can paste. What you present can survive a skeptic.
+its output. What you present can survive a skeptic.
 
 ## When to fire
 
@@ -24,13 +24,13 @@ output you can paste. What you present can survive a skeptic.
 ## Workflow
 
 1. **Reread the entire diff**, from the top, as someone who wants it to
-   fail review. Start at the seams — the boundaries, the error paths —
-   because that is where the author's attention faded.
+   fail review. Start at the seams — boundaries, error paths — where
+   the author's attention faded.
 2. **Check the five axes, in order:**
    - **Correctness** — does it do what the spec's acceptance criteria
      say, including the edge cases and the failure paths?
    - **Tests** — do they assert the *behavior* promised, or just the
-     code that exists? Would the key tests fail if the feature broke?
+     code that exists? Do they fail if the feature breaks?
    - **Security & data** — every new input, every new store, every new
      boundary: is the boundary enumerated and checked?
    - **Ripple** — what did this change touch that it didn't mean to?
@@ -45,11 +45,10 @@ output you can paste. What you present can survive a skeptic.
    findings; the pass ends when it comes back clean.
 5. **Verify every claim with a command.** "Tests pass" — run them.
    "Builds" — build it. "Handles the empty case" — demonstrate it.
-   Any claim you can't evidence, downgrade to "unverified" in the
-   report — or go verify it.
+   A claim you can't evidence is "unverified" — or go verify it.
 6. **Report honestly:** what works (with evidence), what is untested
    (named), what is unfinished (named). The report is the review's
-   product; make it a document a skeptic can audit.
+   product; make it auditable by a skeptic.
 
 ## Red flags
 
@@ -70,5 +69,5 @@ output you can paste. What you present can survive a skeptic.
 - Blockers resolved and re-reviewed on the fresh diff.
 - The completion report contains: claims, the command that verifies
   each, and output. Unverified items are labeled unverified.
-- Scope checked: everything in the diff was asked for, or was flagged
-  as deliberate addition.
+- Scope checked: everything in the diff was asked for or flagged as
+  deliberate.
