@@ -83,6 +83,8 @@ The skills themselves distill named practice, credited inside each body:
   (Spinellis' *Code Reading*; Hermans' *The Programmer's Brain* on
   cognition while reading); the traced request as the unit of
   understanding.
+- **`commit-with-care`** — the commit as a work artifact (Tim Pope's
+  commit-message note; the bisect discipline it enables).
 - **`estimate-with-ranges`** — ranges with confidence and named
   assumptions; the cone of uncertainty (Boehm, via McConnell's
   *Software Estimation*); estimate and commitment kept separate.
