@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="The KILN mark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img"
+     aria-labelledby="kiln-title kiln-desc">
+  <title id="kiln-title">The KILN mark</title>
+  <desc id="kiln-desc">A stylized kiln: a peaked roof over a brick chamber
+    with an arched fire door, a small flame burning inside.</desc>
   <rect width="120" height="120" rx="26" fill="#181209"/>
   <path d="M60 20 L98 52 V98 H22 V52 Z" fill="#221808" stroke="#c8b79d" stroke-width="3" stroke-linejoin="round"/>
   <path d="M40 46 h18 M62 46 h18 M31 62 h58 M31 78 h16 M73 78 h16" stroke="#3a2c14" stroke-width="2" stroke-linecap="round" fill="none"/>
