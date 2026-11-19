@@ -23,11 +23,9 @@ why.
 - Someone proposes a "quick cleanup" — this skill is what makes it
   quick *and* safe.
 
-## When *not* to fire
-
-- You want different behavior. That's a feature; use the other skills.
-- The code is ugly but nobody ever touches it. Untouched ugliness is
-  free; refactoring it is not.
+Do **not** fire when you want different behavior — that is a feature;
+use the other skills. Nor when the code is ugly but nobody ever
+touches it: untouched ugliness is free, refactoring it is not.
 
 ## Workflow
 

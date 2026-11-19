@@ -93,7 +93,8 @@ actually built — not what you remember building.
 review pass with findings tagged by severity and claims verified by
 commands.
 
-**Skills.** `hunt-the-bug`, `review-the-work`
+**Skills.** `hunt-the-bug`, `review-the-work`, `measure-then-optimize`,
+`test-the-contract`
 
 **The smell of skipping it.** "It should work" as a status; bugs that get
 re-closed twice; the diff reviewed by the same attention that wrote it,
@@ -108,9 +109,11 @@ real adversaries — in a way it can survive and come back from.
 
 **Outputs.** Hardened boundaries; a versioned release with user-facing
 notes, a staged rollout, and a rollback plan that has actually been
-touched.
+touched; the three signals — logs, metrics, traces — chosen with the
+first feature, so the system can explain itself when reality answers
+back.
 
-**Skills.** `harden-the-edges`, `open-the-gates`
+**Skills.** `harden-the-edges`, `open-the-gates`, `observe-the-system`
 
 **The smell of skipping it.** The Friday 5pm deploy "because it's a small
 change"; secrets committed temporarily; the first user finding the first
@@ -128,13 +131,22 @@ found.
 of the change; documentation that answers *why* for the reader who arrives
 at 2am during an incident.
 
-**Skills.** `refactor-with-care`, `document-the-why`
+**Skills.** `refactor-with-care`, `document-the-why`, `migrate-gently`
 
 **The smell of skipping it.** The rewrite-in-place nobody asked for, mixing
 "cleanup" with behavior changes; comments that narrate the code instead of
 explaining it; a README whose setup instructions haven't worked since v0.3.
 
 ---
+
+## The eighth skill — meta
+
+Outside the fires sits [`fire-a-skill`](../skills/fire-a-skill/SKILL.md)
+(phase: `meta`): the craft of authoring a *new* KILN skill when a real
+craft is missing from the library and keeps being improvised. It does
+not build software; it builds the library. The map stays seven fires —
+when a new craft can't honestly live under one of them, the map itself
+is wrong, and `fire-a-skill` is where you say so.
 
 ## Why seven
 
