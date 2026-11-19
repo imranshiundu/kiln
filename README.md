@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/kiln.svg" width="110" alt="The KILN mark" />
+  <img src="assets/banner.svg" width="640" alt="The KILN banner: the kiln mark beside the wordmark, with the seven fires — gather, spec, design, build, verify, ship, tend — across the bottom." />
 </p>
 
 <h1 align="center">KILN</h1>

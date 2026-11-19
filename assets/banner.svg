@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img"
+     aria-labelledby="kiln-banner-title kiln-banner-desc">
+  <title id="kiln-banner-title">KILN banner</title>
+  <desc id="kiln-banner-desc">The KILN mark — a peaked kiln with a flame inside —
+    beside the KILN wordmark, with the seven lifecycle phases across the
+    bottom: gather, spec, design, build, verify, ship, tend.</desc>
+
+  <rect width="1280" height="360" rx="36" fill="#181209"/>
+
+  <!-- the mark, from assets/kiln.svg -->
+  <g transform="translate(74, 52) scale(2.05)">
+    <path d="M60 20 L98 52 V98 H22 V52 Z" fill="#221808" stroke="#c8b79d" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M40 46 h18 M62 46 h18 M31 62 h58 M31 78 h16 M73 78 h16" stroke="#3a2c14" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M44 98 V78 A16 16 0 0 1 76 78 V98" fill="#0d0904" stroke="#c8b79d" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M60 66 C69 75 70 84 65 90 C62 93 58 93 55 90 C50 84 51 75 60 66 Z" fill="#f59e0b"/>
+    <path d="M60 75 C65 81 65 86 62 89 C60 91 58 90 58 88 C56 85 56 80 60 75 Z" fill="#fde68a"/>
+  </g>
+
+  <!-- the wordmark -->
+  <text x="400" y="215" fill="#e8d9bf"
+        font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="150" font-weight="700" letter-spacing="14">KILN</text>
+  <text x="404" y="258" fill="#8a7a63"
+        font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="26" letter-spacing="1">raw ideas in. finished software out.</text>
+
+  <!-- the seven fires -->
+  <text x="640" y="322" text-anchor="middle"
+        font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="24" font-weight="600" letter-spacing="4" fill="#c8b79d">GATHER<tspan fill="#f59e0b"> → </tspan>SPEC<tspan fill="#f59e0b"> → </tspan>DESIGN<tspan fill="#f59e0b"> → </tspan>BUILD<tspan fill="#f59e0b"> → </tspan>VERIFY<tspan fill="#f59e0b"> → </tspan>SHIP<tspan fill="#f59e0b"> → </tspan>TEND</text>
+</svg>
