@@ -79,6 +79,10 @@ The skills themselves distill named practice, credited inside each body:
 - **`question-first`** — one-question-at-a-time requirements interviewing,
   echoed by both superpowers (`brainstorming`) and addyosmani
   (`interview-me`).
+- **`read-the-codebase`** — deliberate exploration of unfamiliar code
+  (Spinellis' *Code Reading*; Hermans' *The Programmer's Brain* on
+  cognition while reading); the traced request as the unit of
+  understanding.
 - **`test-first`** — TDD's red-green-refactor (Beck), the test pyramid
   and DAMP-over-DRY (Software Engineering at Google), plus the honest
   edge: where TDD is the wrong tool.

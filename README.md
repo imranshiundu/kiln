@@ -38,12 +38,13 @@ Real work loops through these out of order and that is fine — the map is a com
 
 ## The skills
 
-19 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
+20 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
 
 | Phase | Skill | Fires when |
 | :- | :- | :- |
 | **gather** | [`question-first`](skills/question-first/SKILL.md) | a request arrives without acceptance criteria |
 | **gather** | [`ground-truth`](skills/ground-truth/SKILL.md) | building on code, APIs, or claims that need verifying |
+| **gather** | [`read-the-codebase`](skills/read-the-codebase/SKILL.md) | work starts in a repository nobody has actually read |
 | **spec** | [`write-the-spec`](skills/write-the-spec/SKILL.md) | an agreed idea must become a one-page build contract |
 | **spec** | [`decide-with-records`](skills/decide-with-records/SKILL.md) | a cross-cutting choice gets made once and recorded |
 | **design** | [`model-the-data`](skills/model-the-data/SKILL.md) | persistent state, entities, or invariants take shape |

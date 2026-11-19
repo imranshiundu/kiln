@@ -24,9 +24,11 @@ actually being asked, and what is actually true.
 **Inputs.** A request, a codebase, a claim, an idea.
 
 **Outputs.** A confirmed problem statement with testable acceptance
-criteria; a context brief separating what is verified from what is assumed.
+criteria; a context brief separating what is verified from what is
+assumed; for unfamiliar terrain, a written architecture brief — the
+traced request, the seams, the risks.
 
-**Skills.** `question-first`, `ground-truth`
+**Skills.** `question-first`, `ground-truth`, `read-the-codebase`
 
 **The smell of skipping it.** The first demo reveals the user wanted a
 different thing entirely; the code was written against a library API that
