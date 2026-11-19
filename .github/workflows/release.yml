@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: The tag must match the shipped version
+        run: |
+          python - <<'EOF'
+          import json, os, pathlib, sys
+          version = json.loads(pathlib.Path(".claude-plugin/plugin.json").read_text())["version"]
+          tag = os.environ["GITHUB_REF"].split("/")[-1]
+          if tag != f"v{version}":
+              print(f"tag {tag} does not match plugin.json version {version}")
+              sys.exit(1)
+          print(f"tag {tag} matches plugin version {version}")
+          EOF
+
+      - name: Extract the changelog section for this release
+        id: notes
+        run: |
+          python - <<'EOF' > release-notes.md
+          import json, pathlib
+          version = json.loads(pathlib.Path(".claude-plugin/plugin.json").read_text())["version"]
+          text = pathlib.Path("CHANGELOG.md").read_text()
+          marker = f"## [{version}]"
+          start = text.index(marker)
+          # to the next release heading, or the link footer
+          import re
+          rest = text[start:]
+          m = re.search(r"\n## \[", rest[1:])
+          body = rest[1:m.start()] if m else rest
+          print(body.strip())
+          EOF
+
+      - name: Publish the release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: release-notes.md
+          draft: false
+          prerelease: false
