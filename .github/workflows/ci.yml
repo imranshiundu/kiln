@@ -28,18 +28,8 @@ jobs:
         run: python scripts/firetest.py
 
       - name: Prove the Fire Test can fail
-        if: matrix.os == 'ubuntu-latest'
-        run: |
-          # A skill that breaks the contract must fail the test.
-          # Sabotage one copy, expect a non-zero exit, restore.
-          cp skills/hunt-the-bug/SKILL.md /tmp/SKILL.md.bak
-          sed -i 's/^## North Star/## Northstar (broken)/' skills/hunt-the-bug/SKILL.md
-          if python scripts/firetest.py > /dev/null 2>&1; then
-            echo "FIRE TEST PASSED A BROKEN SKILL - the checker is broken"
-            exit 1
-          fi
-          mv /tmp/SKILL.md.bak skills/hunt-the-bug/SKILL.md
-          python scripts/firetest.py
+        shell: bash
+        run: bash tests/run.sh
 
       - name: Manifest sanity
         if: matrix.os == 'ubuntu-latest'

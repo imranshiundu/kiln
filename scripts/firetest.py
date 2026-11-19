@@ -161,6 +161,9 @@ def parse_args():
                         help="machine-readable output (inventory or results)")
     parser.add_argument("--strict", action="store_true",
                         help="treat warnings (over-budget bodies) as failures")
+    parser.add_argument("--root", metavar="DIR", default=None,
+                        help="library root to check (default: this repo); "
+                             "lets any skills library run the same bar")
     return parser.parse_args()
 
 
@@ -230,7 +233,11 @@ def check_routing(inventory):
 
 
 def main():
+    global ROOT, SKILLS
     args = parse_args()
+    if args.root:
+        ROOT = Path(args.root).resolve()
+        SKILLS = ROOT / "skills"
     if not SKILLS.is_dir():
         print("fatal: skills/ not found — run from the repo root")
         return 2
