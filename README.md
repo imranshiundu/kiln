@@ -65,7 +65,7 @@ Real work loops through these out of order and that is fine — the map is a com
 | **design** | [`design-the-interface`](skills/design-the-interface/SKILL.md) | an API, module boundary, or public surface is born |
 | **build** | [`cut-thin-slices`](skills/cut-thin-slices/SKILL.md) | implementation starts on anything bigger than a one-liner |
 | **build** | [`test-first`](skills/test-first/SKILL.md) | writing logic that must not break |
-| **build** | [`commit-with-care`](skills/commit-with-care/SKILL.md) | work is about to be saved, or a branch has become one blob |
+| **build** | [`commit-with-care`](skills/commit-with-care/SKILL.md) | committing work, or a branch has become one blob |
 | **build** | [`make-it-accessible`](skills/make-it-accessible/SKILL.md) | anything a human will see, hear, or click is being built |
 | **verify** | [`hunt-the-bug`](skills/hunt-the-bug/SKILL.md) | behavior is wrong and the cause is unknown |
 | **verify** | [`review-the-work`](skills/review-the-work/SKILL.md) | work is about to be presented as done |
