@@ -120,6 +120,10 @@ The skills themselves distill named practice, credited inside each body:
   review guide).
 - **`harden-the-edges`** — boundary enumeration; [OWASP](https://owasp.org/)'s
   mental model without its checklist bloat.
+- **`coordinate-the-disclosure`** — the [CERT Guide to Coordinated
+  Vulnerability
+  Disclosure](https://www.sei.cmu.edu/library/the-cert-guide-to-coordinated-vulnerability-disclosure-2)
+  (Householder et al., 2017); the ISO 29147 lineage.
 - **`open-the-gates`** — "faster is safer"; small releases, real rollback
   plans (*Accelerate* / [DORA](https://dora.dev/)).
 - **`observe-the-system`** — the SRE monitoring discipline

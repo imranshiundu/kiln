@@ -48,6 +48,7 @@ nothing until you need them.
    | ship | [`open-the-gates`](skills/open-the-gates/SKILL.md) | a release must go out and come back safely |
    | ship | [`observe-the-system`](skills/observe-the-system/SKILL.md) | a service is born, or an incident found you flying blind |
    | ship | [`rehearse-the-failure`](skills/rehearse-the-failure/SKILL.md) | the system faces reality soon, and the rollback plan has never once been run |
+   | ship | [`coordinate-the-disclosure`](skills/coordinate-the-disclosure/SKILL.md) | a vulnerability report arrives, or an embargo clock is running |
    | tend | [`refactor-with-care`](skills/refactor-with-care/SKILL.md) | structure improves without behavior changing |
    | tend | [`document-the-why`](skills/document-the-why/SKILL.md) | the next reader needs more than the code says |
    | tend | [`migrate-gently`](skills/migrate-gently/SKILL.md) | persistent data or interfaces must change while running |

@@ -122,10 +122,12 @@ notes, a staged rollout, and a rollback plan that has actually been
 touched; the three signals — logs, metrics, traces — chosen with the
 first feature, so the system can explain itself when reality answers
 back; the feared failures rehearsed on controlled ground before
-reality runs the drill instead.
+reality runs the drill instead; vulnerability reports handled as
+coordinated disclosures — acknowledged, scored, fixed, credited,
+published.
 
 **Skills.** `harden-the-edges`, `open-the-gates`, `observe-the-system`,
-`rehearse-the-failure`
+`rehearse-the-failure`, `coordinate-the-disclosure`
 
 **The smell of skipping it.** The Friday 5pm deploy "because it's a small
 change"; secrets committed temporarily; the first user finding the first

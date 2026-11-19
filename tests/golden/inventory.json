@@ -6,6 +6,12 @@
     "trigger": "Use when committing work, a branch has become one blob before merging, or history will ever need bisecting."
   },
   {
+    "name": "coordinate-the-disclosure",
+    "phase": "ship",
+    "words": 387,
+    "trigger": "Use when a vulnerability report arrives, you find a flaw serious enough to disclose yourself, or an embargo clock is running."
+  },
+  {
     "name": "cut-thin-slices",
     "phase": "build",
     "words": 497,
