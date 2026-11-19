@@ -26,6 +26,18 @@ Agents write code fast. What they skip — unless taught — are the crafts that
 
 This is not a pile of prompts. It is a *lifecycle* — a researched map of what it takes to build a whole thing, with a skill waiting at every phase.
 
+## Contents
+
+- [The seven fires](#the-seven-fires) — the lifecycle in one breath
+- [The skills](#the-skills) — 25 crafts, by phase
+- [Install](#install) — any agent, two commands
+- [For agents](#for-agents) — the doctrine
+- [FAQ](#faq) — the questions everyone asks
+- [Roots and direction](#roots-and-direction) — format, lifecycle, research, roadmap
+- [Principles](#principles) — six lines
+- [Prior art](#prior-art) — the shoulders KILN stands on
+- [Contribute](#contribute) — fire a skill into the library
+
 ## The seven fires
 
 Everything that gets built — an app, a service, a library, a side project — passes through the same fires:
@@ -99,6 +111,39 @@ KILN is written *to* agents, not merely *for* them.
 # give KILN to your agent in one line:
 npx skills add imranshiundu/kiln
 ```
+
+## FAQ
+
+**Does KILN work with my agent?**
+If your agent reads `SKILL.md` files — Claude Code, OpenCode,
+Cursor, Codex, Copilot, Amp, Gemini CLI, and 70+ more — yes. KILN
+uses only standard frontmatter and plain Markdown: no includes, no
+scripts, no vendor fields. See [docs/install-matrix.md](docs/install-matrix.md)
+for per-agent commands and what has been live-verified.
+
+**How do I use just one craft?**
+`npx skills add imranshiundu/kiln -s hunt-the-bug`, or copy that
+one folder out of `skills/`. Every skill is self-contained; the
+library is a shelf, not a chain.
+
+**Why is there no React skill, no Rust skill?**
+Because stack knowledge belongs in stack-specific libraries, where
+it can go deep. KILN's crafts are the ones that survive a stack
+change: data still needs modeling, done still needs evidence,
+releases still need rollback.
+
+**How do I know a skill actually works?**
+Three ways, in order of strength: the Fire Test runs mechanically
+in CI on every change; the checker's own test suite proves it can
+fail; and the research notes credit every craft's sources so you
+can read the originals. What we don't have yet is scripted eval
+scenarios per skill — that is the v1.0 roadmap, stated openly.
+
+**Can I propose a craft?**
+Yes — open an issue; the form is the Fire Test in question form.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and
+[skills/fire-a-skill/SKILL.md](skills/fire-a-skill/SKILL.md) first;
+they are the bar.
 
 ## Roots and direction
 
