@@ -14,7 +14,8 @@
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-8a5a2b.svg"></a>
   <a href="https://agentskills.io"><img alt="Follows the Agent Skills standard" src="https://img.shields.io/badge/follows-Agent%20Skills-92610a.svg"></a>
   <a href="https://github.com/vercel-labs/skills#supported-agents"><img alt="Works with 75+ agents" src="https://img.shields.io/badge/works%20with-75%2B%20agents-6b5a3e.svg"></a>
-  <a href="https://github.com/imranshiundu/kiln/actions/workflows/ci.yml"><img alt="CI: Fire Test" src="https://img.shields.io/badge/CI-Fire%20Test-3d2314.svg"></a>
+  <a href="https://github.com/imranshiundu/kiln/actions/workflows/ci.yml"><img alt="CI status: the Fire Test" src="https://github.com/imranshiundu/kiln/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/imranshiundu/kiln/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/imranshiundu/kiln?color=92610a"></a>
 </p>
 
 ---
