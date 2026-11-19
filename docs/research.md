@@ -138,6 +138,8 @@ The skills themselves distill named practice, credited inside each body:
   [Parallel
   Change](https://martinfowler.com/bliki/ParallelChange.html);
   reversible steps, batched idempotent backfills.
+- **`guide-the-reader`** — [Diátaxis](https://diataxis.fr) (Procida):
+  tutorials, how-to, reference, explanation — one job per page.
 - **`rehearse-the-failure`** — the [Principles of Chaos
   Engineering](https://principlesofchaos.org) (steady-state hypotheses,
   blast radius); Rosenthal and Jones' *Chaos Engineering*.

@@ -143,10 +143,11 @@ found.
 of the change; documentation that answers *why* for the reader who arrives
 at 2am during an incident; dependencies current by evidence — changelogs
 read, batches verified, majors planned; incidents converted into owned
-learning: blameless postmortems whose action items actually close.
+learning: blameless postmortems whose action items actually close;
+newcomers reaching first success alone because each doc did one job.
 
 **Skills.** `refactor-with-care`, `document-the-why`, `migrate-gently`,
-`tend-the-dependencies`, `run-the-postmortem`
+`tend-the-dependencies`, `run-the-postmortem`, `guide-the-reader`
 
 **The smell of skipping it.** The rewrite-in-place nobody asked for, mixing
 "cleanup" with behavior changes; comments that narrate the code instead of

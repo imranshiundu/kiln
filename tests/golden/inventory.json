@@ -48,6 +48,12 @@
     "trigger": "Use when working in an unfamiliar codebase, using a library whose version may differ from training knowledge, or building on any claim you have not personally verified."
   },
   {
+    "name": "guide-the-reader",
+    "phase": "tend",
+    "words": 408,
+    "trigger": "Use when a user must learn the thing you built, the same question keeps getting answered in chat, or the docs mix teaching with reference into mush."
+  },
+  {
     "name": "harden-the-edges",
     "phase": "ship",
     "words": 496,
