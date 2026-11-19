@@ -151,6 +151,33 @@ explaining it; a README whose setup instructions haven't worked since v0.3.
 
 ---
 
+## The common loops
+
+The map says work moves left to right; reality says it spirals. The
+three loops that carry most of the traffic:
+
+**The bug loop** — a report arrives in `ship` wearing a `verify`
+problem. `hunt-the-bug` reproduces and root-causes; the guard it
+writes is `test-first`'s permanent kind; if the fix touched a
+published shape, `test-the-contract` pins it; `open-the-gates`
+ships the fix small; `document-the-why` records what the next
+hunter needs. The loop is not a failure — *silent* re-entry is.
+
+**The drift loop** — mid-build, the spec stops matching reality.
+Wrong move: keep building on a stale contract. Right move: back to
+`question-first` for the one question that changed, amend the spec,
+then forward again. `estimate-with-ranges` re-estimates, because a
+spec that moved is a schedule that moved.
+
+**The migration loop** — `model-the-data` says the schema is wrong
+for what the system became. `migrate-gently` carries the change
+(expand, migrate, contract) while `test-the-contract` holds the
+published boundary steady across the whole window. The data changes
+shape; the promise does not.
+
+Knowing the loops is knowing the map: a compass for where you are,
+not a rail for where you must go next.
+
 ## The eighth skill — meta
 
 Outside the fires sits [`fire-a-skill`](../skills/fire-a-skill/SKILL.md)
