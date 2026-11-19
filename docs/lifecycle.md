@@ -178,7 +178,7 @@ shape; the promise does not.
 Knowing the loops is knowing the map: a compass for where you are,
 not a rail for where you must go next.
 
-## The eighth skill — meta
+## Beyond the fires — the meta craft
 
 Outside the fires sits [`fire-a-skill`](../skills/fire-a-skill/SKILL.md)
 (phase: `meta`): the craft of authoring a *new* KILN skill when a real

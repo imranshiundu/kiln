@@ -27,31 +27,31 @@ nothing until you need them.
 
    | Phase | Skill | Fires when |
    | :- | :- | :- |
-   | gather | `question-first` | the ask is vague or has no acceptance criteria |
-   | gather | `ground-truth` | you must build on code, APIs, or claims you haven't verified |
-   | gather | `read-the-codebase` | work starts in a repo nobody has actually read |
-   | spec | `write-the-spec` | an agreed idea needs to become a build contract |
-   | spec | `decide-with-records` | a cross-cutting choice must be made once and recorded |
-   | spec | `estimate-with-ranges` | anyone asks how long, how much, or whether it fits |
-   | design | `model-the-data` | persistent state, entities, or invariants take shape |
-   | design | `design-the-interface` | an API, module boundary, or public surface is born |
-   | build | `cut-thin-slices` | implementation begins on anything bigger than a one-liner |
-   | build | `test-first` | you are writing logic that must not break |
-   | build | `commit-with-care` | committing work, or a branch has become one blob |
-   | build | `make-it-accessible` | anything a human will see, hear, or click is being built |
-   | verify | `hunt-the-bug` | behavior is wrong and the cause is unknown |
-   | verify | `review-the-work` | work is about to be presented as done |
-   | verify | `measure-then-optimize` | something is slow and a fix is being proposed without numbers |
-   | verify | `test-the-contract` | a published boundary is about to change shape |
-   | verify | `test-the-edges` | the suite is green but trust is low, or inputs come from outside |
-   | ship | `harden-the-edges` | the work faces real users, real data, real attackers |
-   | ship | `open-the-gates` | a release must go out and come back safely |
-   | ship | `observe-the-system` | a service is born, or an incident found you flying blind |
-   | tend | `refactor-with-care` | structure improves without behavior changing |
-   | tend | `document-the-why` | the next reader needs more than the code says |
-   | tend | `migrate-gently` | persistent data or interfaces must change while running |
-   | tend | `tend-the-dependencies` | updates are pending, a lockfile drifts, or a major is being rushed |
-   | meta | `fire-a-skill` | KILN itself needs a new skill |
+   | gather | [`question-first`](skills/question-first/SKILL.md) | the ask is vague or has no acceptance criteria |
+   | gather | [`ground-truth`](skills/ground-truth/SKILL.md) | you must build on code, APIs, or claims you haven't verified |
+   | gather | [`read-the-codebase`](skills/read-the-codebase/SKILL.md) | work starts in a repo nobody has actually read |
+   | spec | [`write-the-spec`](skills/write-the-spec/SKILL.md) | an agreed idea needs to become a build contract |
+   | spec | [`decide-with-records`](skills/decide-with-records/SKILL.md) | a cross-cutting choice must be made once and recorded |
+   | spec | [`estimate-with-ranges`](skills/estimate-with-ranges/SKILL.md) | anyone asks how long, how much, or whether it fits |
+   | design | [`model-the-data`](skills/model-the-data/SKILL.md) | persistent state, entities, or invariants take shape |
+   | design | [`design-the-interface`](skills/design-the-interface/SKILL.md) | an API, module boundary, or public surface is born |
+   | build | [`cut-thin-slices`](skills/cut-thin-slices/SKILL.md) | implementation begins on anything bigger than a one-liner |
+   | build | [`test-first`](skills/test-first/SKILL.md) | you are writing logic that must not break |
+   | build | [`commit-with-care`](skills/commit-with-care/SKILL.md) | committing work, or a branch has become one blob |
+   | build | [`make-it-accessible`](skills/make-it-accessible/SKILL.md) | anything a human will see, hear, or click is being built |
+   | verify | [`hunt-the-bug`](skills/hunt-the-bug/SKILL.md) | behavior is wrong and the cause is unknown |
+   | verify | [`review-the-work`](skills/review-the-work/SKILL.md) | work is about to be presented as done |
+   | verify | [`measure-then-optimize`](skills/measure-then-optimize/SKILL.md) | something is slow and a fix is being proposed without numbers |
+   | verify | [`test-the-contract`](skills/test-the-contract/SKILL.md) | a published boundary is about to change shape |
+   | verify | [`test-the-edges`](skills/test-the-edges/SKILL.md) | the suite is green but trust is low, or inputs come from outside |
+   | ship | [`harden-the-edges`](skills/harden-the-edges/SKILL.md) | the work faces real users, real data, real attackers |
+   | ship | [`open-the-gates`](skills/open-the-gates/SKILL.md) | a release must go out and come back safely |
+   | ship | [`observe-the-system`](skills/observe-the-system/SKILL.md) | a service is born, or an incident found you flying blind |
+   | tend | [`refactor-with-care`](skills/refactor-with-care/SKILL.md) | structure improves without behavior changing |
+   | tend | [`document-the-why`](skills/document-the-why/SKILL.md) | the next reader needs more than the code says |
+   | tend | [`migrate-gently`](skills/migrate-gently/SKILL.md) | persistent data or interfaces must change while running |
+   | tend | [`tend-the-dependencies`](skills/tend-the-dependencies/SKILL.md) | updates are pending, a lockfile drifts, or a major is being rushed |
+   | meta | [`fire-a-skill`](skills/fire-a-skill/SKILL.md) | KILN itself needs a new skill |
 
 3. **Fire it.** Load that skill's `SKILL.md` and follow its workflow exactly.
    One skill at a time. If two skills apply, run them in the order the
