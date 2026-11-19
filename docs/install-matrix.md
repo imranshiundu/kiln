@@ -12,7 +12,7 @@ Statuses mean:
 ## Any agent — the skills CLI (recommended)
 
 ```bash
-npx skills add imranshiundu/kiln          # all 25 skills
+npx skills add imranshiundu/kiln          # all 30 skills
 npx skills add imranshiundu/kiln --list   # browse first
 npx skills add imranshiundu/kiln -s hunt-the-bug   # one craft
 ```

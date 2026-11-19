@@ -22,14 +22,14 @@
 
 A kiln turns soft clay into enduring craft. **KILN turns a capable agent into a complete builder.**
 
-Agents write code fast. What they skip — unless taught — are the crafts that make software last: interrogating the request before building, reading an unfamiliar codebase before editing it, writing the spec, modeling the data, testing first, committing with care, hunting root causes instead of symptoms, testing the edges and the contracts, making interfaces everyone can use, observing the running system, releasing deliberately, migrating gently, documenting the why. KILN is those crafts, written down as agent skills: **one craft per skill, each a workflow with gates and evidence requirements, not an essay.**
+Agents write code fast. What they skip — unless taught — are the crafts that make software last: interrogating the request before building, reading an unfamiliar codebase before editing it, writing the spec, modeling the data, testing first, committing with care, hunting root causes instead of symptoms, testing the edges and the contracts, making interfaces everyone can use, observing the running system, finding the ceiling before the launch does, releasing deliberately, rehearsing the failure, coordinating the disclosure, migrating gently, documenting the why, guiding the reader, running the postmortem when reality answers back. KILN is those crafts, written down as agent skills: **one craft per skill, each a workflow with gates and evidence requirements, not an essay.**
 
 This is not a pile of prompts. It is a *lifecycle* — a researched map of what it takes to build a whole thing, with a skill waiting at every phase.
 
 ## Contents
 
 - [The seven fires](#the-seven-fires) — the lifecycle in one breath
-- [The skills](#the-skills) — 25 crafts, by phase
+- [The skills](#the-skills) — 30 crafts, by phase
 - [Install](#install) — any agent, two commands
 - [For agents](#for-agents) — the doctrine
 - [FAQ](#faq) — the questions everyone asks
@@ -160,6 +160,9 @@ they are the bar.
 | [`docs/lifecycle.md`](docs/lifecycle.md) | The map — the seven fires, their inputs, outputs, and the smell of skipping each |
 | [`docs/research.md`](docs/research.md) | The receipts — the field survey of the agent-skills ecosystem, every influence credited |
 | [`docs/install-matrix.md`](docs/install-matrix.md) | Per-agent install commands with honest status labels — what's verified, what's documented |
+| [`docs/index.md`](docs/index.md) | The library card — every skill and its trigger on one page, generated and CI-guarded |
+| [`docs/field-guide.md`](docs/field-guide.md) | Common situations, routed — ten real openings and the skills that carry each |
+| [`docs/eval.md`](docs/eval.md) | The live-fire protocol — the two-session test every skill must pass |
 | [`docs/glossary.md`](docs/glossary.md) | The vocabulary pinned — fire, craft, trigger, gate, receipt, the bar |
 | [`ROADMAP.md`](ROADMAP.md) | **The direction** — where KILN goes next, and what it will never be |
 | [`CHANGELOG.md`](CHANGELOG.md) | What shipped, when, and why |
@@ -188,7 +191,9 @@ A library that preaches evidence runs on its own medicine:
   is caught; a checker that cannot fail is a rubber stamp.
 - **Metadata drift is a diff, not a surprise.** The golden inventory
   snapshot fails CI when a skill's trigger or phase changes without
-  its snapshot regenerating in the same commit.
+  its snapshot regenerating in the same commit, and the
+  [library index](docs/index.md) is generated and diffed the same
+  way — the docs cannot drift from the library they describe.
 - **Releases publish themselves** from tags, with the changelog
   section as notes, gated on tag/version match. A shipped version
   without a changelog entry fails CI before it fails a user.

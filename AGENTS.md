@@ -5,7 +5,7 @@ manual. Read it once, then work by it.
 
 ## What you are holding
 
-KILN is a library of 25 crafts — one craft per `SKILL.md` — that
+KILN is a library of 30 crafts — one craft per `SKILL.md` — that
 together cover the whole lifecycle of building software:
 
 ```
