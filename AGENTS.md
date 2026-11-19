@@ -37,10 +37,14 @@ nothing until you need them.
    | build | `test-first` | you are writing logic that must not break |
    | verify | `hunt-the-bug` | behavior is wrong and the cause is unknown |
    | verify | `review-the-work` | work is about to be presented as done |
+   | verify | `measure-then-optimize` | something is slow and a fix is being proposed without numbers |
+   | verify | `test-the-contract` | a published boundary is about to change shape |
    | ship | `harden-the-edges` | the work faces real users, real data, real attackers |
    | ship | `open-the-gates` | a release must go out and come back safely |
+   | ship | `observe-the-system` | a service is born, or an incident found you flying blind |
    | tend | `refactor-with-care` | structure improves without behavior changing |
    | tend | `document-the-why` | the next reader needs more than the code says |
+   | tend | `migrate-gently` | persistent data or interfaces must change while running |
    | meta | `fire-a-skill` | KILN itself needs a new skill |
 
 3. **Fire it.** Load that skill's `SKILL.md` and follow its workflow exactly.

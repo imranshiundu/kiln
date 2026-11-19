@@ -14,6 +14,7 @@
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-8a5a2b.svg"></a>
   <a href="https://agentskills.io"><img alt="Follows the Agent Skills standard" src="https://img.shields.io/badge/follows-Agent%20Skills-f59e0b.svg"></a>
   <img alt="Works with 75+ agents" src="https://img.shields.io/badge/works%20with-75%2B%20agents-6b5a3e.svg">
+  <a href="https://github.com/imranshiundu/kiln/actions/workflows/ci.yml"><img alt="CI: Fire Test" src="https://img.shields.io/badge/CI-Fire%20Test-3d2314.svg"></a>
 </p>
 
 ---
@@ -37,7 +38,7 @@ Real work loops through these out of order and that is fine — the map is a com
 
 ## The skills
 
-15 skills. Each fits in your agent's context with room to spare, and fires only when relevant.
+19 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
 
 | Phase | Skill | Fires when |
 | :- | :- | :- |
@@ -51,10 +52,14 @@ Real work loops through these out of order and that is fine — the map is a com
 | **build** | [`test-first`](skills/test-first/SKILL.md) | writing logic that must not break |
 | **verify** | [`hunt-the-bug`](skills/hunt-the-bug/SKILL.md) | behavior is wrong and the cause is unknown |
 | **verify** | [`review-the-work`](skills/review-the-work/SKILL.md) | work is about to be presented as done |
+| **verify** | [`measure-then-optimize`](skills/measure-then-optimize/SKILL.md) | something is slow and a fix is proposed without numbers |
+| **verify** | [`test-the-contract`](skills/test-the-contract/SKILL.md) | a published boundary is about to change shape |
 | **ship** | [`harden-the-edges`](skills/harden-the-edges/SKILL.md) | the work faces real users, real data, real attackers |
 | **ship** | [`open-the-gates`](skills/open-the-gates/SKILL.md) | a release must go out and come back safely |
+| **ship** | [`observe-the-system`](skills/observe-the-system/SKILL.md) | a service is born without its signals, or an incident finds you blind |
 | **tend** | [`refactor-with-care`](skills/refactor-with-care/SKILL.md) | structure improves without behavior changing |
 | **tend** | [`document-the-why`](skills/document-the-why/SKILL.md) | the next reader needs more than the code says |
+| **tend** | [`migrate-gently`](skills/migrate-gently/SKILL.md) | persistent data or interfaces must change while running |
 | **meta** | [`fire-a-skill`](skills/fire-a-skill/SKILL.md) | KILN itself needs a new skill |
 
 ## Install
@@ -95,7 +100,9 @@ npx skills add imranshiundu/kiln
 | [`docs/format.md`](docs/format.md) | **The roots** — the KILN skill format: frontmatter contract, body anatomy, and the Fire Test quality bar every skill must pass |
 | [`docs/lifecycle.md`](docs/lifecycle.md) | The map — the seven fires, their inputs, outputs, and the smell of skipping each |
 | [`docs/research.md`](docs/research.md) | The receipts — the field survey of the agent-skills ecosystem, every influence credited |
+| [`docs/install-matrix.md`](docs/install-matrix.md) | Per-agent install commands with honest status labels — what's verified, what's documented |
 | [`ROADMAP.md`](ROADMAP.md) | **The direction** — where KILN goes next, and what it will never be |
+| [`CHANGELOG.md`](CHANGELOG.md) | What shipped, when, and why |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to fire a new skill into the library |
 
 ## Principles

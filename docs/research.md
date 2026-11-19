@@ -94,6 +94,17 @@ The skills themselves distill named practice, credited inside each body:
   without OWASP's checklist bloat.
 - **`open-the-gates`** — "faster is safer"; small releases, real rollback
   plans (Accelerate / DORA).
+- **`observe-the-system`** — the SRE monitoring discipline (Google's
+  SRE book), Sridharan's observability writing, OpenTelemetry's
+  three-signal model; questions-first instrumentation.
+- **`measure-then-optimize`** — Knuth on premature optimization (1974);
+  Gregg's systems-performance methodology; measure-change-measure,
+  serially.
+- **`test-the-contract`** — consumer-driven contracts (Robinson,
+  Fowler), Pact's machinery, Hyrum's Law as the reason the promise
+  must be pinned by machinery, not memory.
+- **`migrate-gently`** — expand-migrate-contract (Sato), Fowler's
+  Parallel Change; reversible steps, batched idempotent backfills.
 - **`document-the-why`** — ADRs (Nygard), docs-for-the-2am-reader.
 - **`fire-a-skill`** — meta-skill pattern (superpowers `writing-skills`;
   Anthropic's skill-authoring best practices).
