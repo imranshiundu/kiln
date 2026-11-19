@@ -1,0 +1,4 @@
+# Ownership is currently a single maintainer; stated explicitly so
+# it is a decision, not an omission. When a second maintainer
+# arrives, they get a line here in the same commit.
+* @imranshiundu
