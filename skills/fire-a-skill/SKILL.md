@@ -34,8 +34,8 @@ not by one opinion with formatting.
    now, while it's cheap.
 3. **Write the `description` as a trigger, not an abstract.** What it
    does, then `Use when…` with concrete situations an agent can match
-   against real requests. The description is the only thing an agent
-   sees before loading you — it *is* the skill's door.
+   against real requests. The description is all an agent sees before
+   loading you — it *is* the skill's door.
 4. **Write the five sections, in order** (contract in `docs/format.md`):
    - **North Star** — the finished state, one paragraph.
    - **When to fire** — the triggers, expanded.
@@ -46,21 +46,21 @@ not by one opinion with formatting.
 5. **Cut to under ~500 words.** Every line rides in context on every
    turn of the phase. Delete prose that flatters; keep steps that bind.
 6. **Credit the sources** in the body. Craft knowledge is inherited —
-   from books, practice, other libraries. A skill that claims to have
+   books, practice, other libraries. A skill that claims to have
    invented its craft is lying about its parents.
 7. **Run the Fire Test**, all six, in writing: one craft; triggerable
    description; workflow, not prose; evidence over claims; lean;
    credited.
 8. **Test it live, both ways.** Run a real session where the skill
    *should* fire — it must. Run one where it *shouldn't* — it must not.
-   A skill that fires on everything is noise; one that never fires is a
-   file. Include both transcripts, trimmed.
+   A skill that fires on everything is noise; one that never fires is
+   a file. Include both transcripts, trimmed.
 9. **Propose it** via `CONTRIBUTING.md`: one skill per PR, evidence
    attached.
 
 ## Red flags
 
-- The skill that is really three skills wearing a trench coat.
+- Three skills wearing a trench coat.
 - A description so broad it triggers on everything — or so narrow only
   its birth session matches.
 - A body that argues instead of instructs. Skills are not essays.
@@ -70,7 +70,7 @@ not by one opinion with formatting.
 ## Exit criteria
 
 - The Fire Test checklist passed, all six, in writing.
-- Transcripts of the skill firing correctly in a real session — and
-  correctly staying silent in one where it shouldn't.
+- Transcripts of the skill firing in a real session — and staying
+  silent in one where it shouldn't.
 - Committed under `skills/<name>/SKILL.md`, frontmatter matching the
   contract, README index updated.
