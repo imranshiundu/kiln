@@ -42,9 +42,12 @@ before code makes the design expensive to change.
 **Inputs.** A confirmed problem statement.
 
 **Outputs.** A one-page spec (problem, users, non-goals, acceptance
-criteria); decision records for the choices that shape everything after.
+criteria); decision records for the choices that shape everything
+after; estimates as ranges with confidence, anchored on comparable
+history and re-estimated as evidence lands.
 
-**Skills.** `write-the-spec`, `decide-with-records`
+**Skills.** `write-the-spec`, `decide-with-records`,
+`estimate-with-ranges`
 
 **The smell of skipping it.** "Scope creep" that was really always the
 requirements; two contributors building toward different invisible specs;

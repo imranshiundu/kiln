@@ -38,7 +38,7 @@ Real work loops through these out of order and that is fine — the map is a com
 
 ## The skills
 
-20 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
+21 skills, every phase deepened where real projects burn. Each fits in your agent's context with room to spare, and fires only when relevant.
 
 | Phase | Skill | Fires when |
 | :- | :- | :- |
@@ -47,6 +47,7 @@ Real work loops through these out of order and that is fine — the map is a com
 | **gather** | [`read-the-codebase`](skills/read-the-codebase/SKILL.md) | work starts in a repository nobody has actually read |
 | **spec** | [`write-the-spec`](skills/write-the-spec/SKILL.md) | an agreed idea must become a one-page build contract |
 | **spec** | [`decide-with-records`](skills/decide-with-records/SKILL.md) | a cross-cutting choice gets made once and recorded |
+| **spec** | [`estimate-with-ranges`](skills/estimate-with-ranges/SKILL.md) | anyone asks how long, how much, or whether it fits |
 | **design** | [`model-the-data`](skills/model-the-data/SKILL.md) | persistent state, entities, or invariants take shape |
 | **design** | [`design-the-interface`](skills/design-the-interface/SKILL.md) | an API, module boundary, or public surface is born |
 | **build** | [`cut-thin-slices`](skills/cut-thin-slices/SKILL.md) | implementation starts on anything bigger than a one-liner |

@@ -32,6 +32,7 @@ nothing until you need them.
    | gather | `read-the-codebase` | work starts in a repo nobody has actually read |
    | spec | `write-the-spec` | an agreed idea needs to become a build contract |
    | spec | `decide-with-records` | a cross-cutting choice must be made once and recorded |
+   | spec | `estimate-with-ranges` | anyone asks how long, how much, or whether it fits |
    | design | `model-the-data` | persistent state, entities, or invariants take shape |
    | design | `design-the-interface` | an API, module boundary, or public surface is born |
    | build | `cut-thin-slices` | implementation begins on anything bigger than a one-liner |

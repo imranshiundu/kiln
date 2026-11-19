@@ -83,6 +83,9 @@ The skills themselves distill named practice, credited inside each body:
   (Spinellis' *Code Reading*; Hermans' *The Programmer's Brain* on
   cognition while reading); the traced request as the unit of
   understanding.
+- **`estimate-with-ranges`** — ranges with confidence and named
+  assumptions; the cone of uncertainty (Boehm, via McConnell's
+  *Software Estimation*); estimate and commitment kept separate.
 - **`test-first`** — TDD's red-green-refactor (Beck), the test pyramid
   and DAMP-over-DRY (Software Engineering at Google), plus the honest
   edge: where TDD is the wrong tool.
