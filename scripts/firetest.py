@@ -10,6 +10,7 @@ Stdlib only. Exits non-zero on any failure. Run from the repo root:
 
     python3 scripts/firetest.py
 """
+import json
 import re
 import sys
 from pathlib import Path
@@ -145,7 +146,65 @@ def check_cross_references(skill_names):
                 err(name, f"not referenced in {label}")
 
 
+def parse_args():
+    import argparse
+    parser = argparse.ArgumentParser(
+        description="The Fire Test, made mechanical (docs/format.md)")
+    parser.add_argument("--list", action="store_true",
+                        help="print the library inventory and exit")
+    parser.add_argument("--json", action="store_true",
+                        help="machine-readable output (inventory or results)")
+    parser.add_argument("--strict", action="store_true",
+                        help="treat warnings (over-budget bodies) as failures")
+    return parser.parse_args()
+
+
+def load_inventory():
+    """Read every skill's frontmatter and body stats into a list of
+    dicts — the single source for both --list and the checks."""
+    folders = sorted(p for p in SKILLS.iterdir() if p.is_dir())
+    inv = []
+    for folder in folders:
+        path = folder / "SKILL.md"
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8")
+        fm, body = parse_frontmatter(text)
+        if fm is None:
+            continue
+        first_trigger = fm.get("description", "").strip()
+        marker = first_trigger.lower().find("use when")
+        if marker != -1:
+            first_trigger = first_trigger[marker:].strip()
+        inv.append({
+            "name": folder.name,
+            "phase": fm.get("metadata.phase", "?"),
+            "words": len(body.split()),
+            "trigger": first_trigger,
+        })
+    return inv
+
+
+def print_inventory(inv, as_json=False):
+    if as_json:
+        print(json.dumps(inv, indent=2))
+        return
+    by_phase = {}
+    for s in inv:
+        by_phase.setdefault(s["phase"], []).append(s)
+    width = max(len(s["name"]) for s in inv) + 2
+    for phase in sorted(by_phase):
+        print(f"\n{phase} ({len(by_phase[phase])})")
+        for s in by_phase[phase]:
+            over = "" if s["words"] <= WORD_BUDGET else "  +over"
+            print(f"  {s['name']:<{width}} {s['words']:>3}w{over}")
+            print(f"  {'':<{width}} {s['trigger']}")
+    print(f"\n{len(inv)} skills, "
+          + ", ".join(f"{p} {len(v)}" for p, v in sorted(by_phase.items())))
+
+
 def main():
+    args = parse_args()
     if not SKILLS.is_dir():
         print("fatal: skills/ not found — run from the repo root")
         return 2
@@ -154,14 +213,23 @@ def main():
         check_skill(folder)
     check_cross_references([f.name for f in folders])
 
+    if args.list:
+        print_inventory(load_inventory(), args.json)
+        return 0
+
     print(f"Fire Test: {len(folders)} skills checked")
     for w in warnings:
         print(f"  WARN  {w}")
     for e in errors:
         print(f"  FAIL  {e}")
     verdict = "ALL GREEN" if not errors else f"{len(errors)} FAILURE(S)"
-    print(f"Result: {verdict}")
-    return 1 if errors else 0
+    if args.json:
+        print(json.dumps({"skills": len(folders), "warnings": warnings,
+                          "errors": errors, "verdict": verdict}, indent=2))
+    else:
+        print(f"Result: {verdict}")
+    failed = bool(errors) or (args.strict and warnings)
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":
