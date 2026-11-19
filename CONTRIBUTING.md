@@ -33,6 +33,30 @@ describes:
 6. Test it live: run a real agent session where the skill fires, and one
    where it doesn't. Include both transcripts (trimmed) in the PR.
 
+## Anatomy of a good proposal
+
+Weak:
+
+> I'd like to add a skill about caching. Caching is really
+> important for performance and agents often get it wrong.
+
+No craft (which part of caching?), no trigger (when should it
+load?), no source (whose caching discipline?). This proposal dies
+in the issue, kindly.
+
+Strong:
+
+> Craft: deciding *whether* to cache, then making it correct —
+> staleness bounds, invalidation on write, the thundering herd —
+> before making it fast. Phase: build. Fires when: someone reaches
+> for a cache to fix a slow query; a cache exists with no stated
+> staleness bound; invalidation is "later". Sources: HTTP caching
+> semantics (RFC 9111), Pat Helland's "Immutability Changes
+> Everything", the SRE book on load shedding.
+
+Same topic, one craft, three concrete triggers, named parents.
+That proposal gets built.
+
 ## PR expectations
 
 - One skill per PR (or a docs change).
@@ -47,9 +71,17 @@ describes:
 ## Improving existing skills
 
 Tightening an existing skill is the most welcome contribution of all —
-a removed sentence is a per-turn cost cut for every future load. Keep
-the exit criteria, keep the gates, cut everything else that survives the
-cut.
+a removed sentence is a per-turn cost cut for every future load. The
+rule is **tighten, don't grow**: a change that removes words and keeps
+the gates is nearly always right; a change that adds words must add a
+gate, a trigger, or a red flag the skill was demonstrably missing.
+Keep the exit criteria, keep the gates, cut everything else that
+survives the cut — and if the body crosses the ~500-word budget,
+that is the signal to cut, not to ask for more room.
+
+When you change a skill's frontmatter or trigger, regenerate the
+golden snapshot in the same commit:
+`python3 scripts/firetest.py --list --json > tests/golden/inventory.json`.
 
 ## Code of conduct
 
