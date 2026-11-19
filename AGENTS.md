@@ -5,8 +5,8 @@ manual. Read it once, then work by it.
 
 ## What you are holding
 
-KILN is a library of crafts — one craft per `SKILL.md` — that together cover
-the whole lifecycle of building software:
+KILN is a library of 25 crafts — one craft per `SKILL.md` — that
+together cover the whole lifecycle of building software:
 
 ```
 GATHER -> SPEC -> DESIGN -> BUILD -> VERIFY -> SHIP -> TEND
