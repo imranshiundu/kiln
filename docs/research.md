@@ -83,6 +83,9 @@ The skills themselves distill named practice, credited inside each body:
   (Spinellis' *Code Reading*; Hermans' *The Programmer's Brain* on
   cognition while reading); the traced request as the unit of
   understanding.
+- **`make-it-accessible`** — WCAG 2.2 (W3C), Pickering's
+  *Inclusive Components*, Deque's axe rules; semantics first,
+  keyboard-complete, both automated and human testing.
 - **`commit-with-care`** — the commit as a work artifact (Tim Pope's
   commit-message note; the bisect discipline it enables).
 - **`estimate-with-ranges`** — ranges with confidence and named

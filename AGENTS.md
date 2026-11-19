@@ -38,6 +38,7 @@ nothing until you need them.
    | build | `cut-thin-slices` | implementation begins on anything bigger than a one-liner |
    | build | `test-first` | you are writing logic that must not break |
    | build | `commit-with-care` | work is about to be saved, or a branch has become one blob |
+   | build | `make-it-accessible` | anything a human will see, hear, or click is being built |
    | verify | `hunt-the-bug` | behavior is wrong and the cause is unknown |
    | verify | `review-the-work` | work is about to be presented as done |
    | verify | `measure-then-optimize` | something is slow and a fix is being proposed without numbers |

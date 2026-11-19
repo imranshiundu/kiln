@@ -80,9 +80,12 @@ before the acrobatics.
 **Outputs.** A walking skeleton, then a sequence of thin vertical slices —
 each demonstrably working, each a safe rollback point. Logic that must not
 break, guarded by tests written before it. History that tells the story:
-one logical change per commit, every commit green, messages that say why.
+one logical change per commit, every commit green, messages that say
+why. Interfaces a human can actually use: keyboard-complete,
+labeled, contrast-checked, tested with assistive technology.
 
-**Skills.** `cut-thin-slices`, `test-first`, `commit-with-care`
+**Skills.** `cut-thin-slices`, `test-first`, `commit-with-care`,
+`make-it-accessible`
 
 **The smell of skipping it.** Three weeks of "80% done" with nothing that
 runs; a green checkmark that tests nothing; the integration scheduled for
