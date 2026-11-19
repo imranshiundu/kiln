@@ -1,0 +1,8 @@
+# Normalize line endings on commit; LF in the repo, LF in the worktree.
+* text=auto eol=lf
+
+# The lockfile-format fixture snapshots are data, not prose - keep them exact.
+*.json -text
+
+# The mark
+*.svg text

@@ -1,0 +1,8 @@
+# Nobody builds here, but people run `npx skills` from checkouts;
+# ignore what that leaves behind.
+node_modules/
+package-lock.json
+
+# Scratch
+*.log
+.DS_Store
