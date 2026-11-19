@@ -120,6 +120,12 @@
     "trigger": "Use when work is about to be presented as complete, a milestone is claimed, or a change is about to be merged."
   },
   {
+    "name": "run-the-postmortem",
+    "phase": "tend",
+    "words": 420,
+    "trigger": "Use when an incident is over or contained, a near-miss rattled the team, or the same incident keeps coming back."
+  },
+  {
     "name": "tend-the-dependencies",
     "phase": "tend",
     "words": 435,

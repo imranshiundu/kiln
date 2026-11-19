@@ -51,6 +51,7 @@ nothing until you need them.
    | tend | [`document-the-why`](skills/document-the-why/SKILL.md) | the next reader needs more than the code says |
    | tend | [`migrate-gently`](skills/migrate-gently/SKILL.md) | persistent data or interfaces must change while running |
    | tend | [`tend-the-dependencies`](skills/tend-the-dependencies/SKILL.md) | updates are pending, a lockfile drifts, or a major is being rushed |
+   | tend | [`run-the-postmortem`](skills/run-the-postmortem/SKILL.md) | an incident is over and the learning must not evaporate |
    | meta | [`fire-a-skill`](skills/fire-a-skill/SKILL.md) | KILN itself needs a new skill |
 
 3. **Fire it.** Load that skill's `SKILL.md` and follow its workflow exactly.

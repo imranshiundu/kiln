@@ -140,10 +140,11 @@ found.
 **Outputs.** Behavior-preserving refactors with green tests on both sides
 of the change; documentation that answers *why* for the reader who arrives
 at 2am during an incident; dependencies current by evidence — changelogs
-read, batches verified, majors planned.
+read, batches verified, majors planned; incidents converted into owned
+learning: blameless postmortems whose action items actually close.
 
 **Skills.** `refactor-with-care`, `document-the-why`, `migrate-gently`,
-`tend-the-dependencies`
+`tend-the-dependencies`, `run-the-postmortem`
 
 **The smell of skipping it.** The rewrite-in-place nobody asked for, mixing
 "cleanup" with behavior changes; comments that narrate the code instead of

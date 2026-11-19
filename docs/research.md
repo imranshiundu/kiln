@@ -138,6 +138,10 @@ The skills themselves distill named practice, credited inside each body:
   [Parallel
   Change](https://martinfowler.com/bliki/ParallelChange.html);
   reversible steps, batched idempotent backfills.
+- **`run-the-postmortem`** — blameless postmortems ([Etsy / Allspaw,
+  2012](https://www.etsy.com/codeascraft/blameless-postmortems)); the
+  [SRE book's postmortem
+culture](https://sre.google/sre-book/postmortem-culture/).
 - **`tend-the-dependencies`** — the [SemVer](https://semver.org/)
   contract (Preston-Werner); the automation discipline of
   [Renovate](https://docs.renovatebot.com/) and
